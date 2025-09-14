@@ -91,6 +91,19 @@ export const Timer = ({ algorithm, onTimeRecorded }: TimerProps) => {
     };
   }, [isRunning, startTime]);
 
+  // Add body class for mobile timer
+  useEffect(() => {
+    if (algorithm) {
+      document.body.classList.add('timer-active');
+    } else {
+      document.body.classList.remove('timer-active');
+    }
+    
+    return () => {
+      document.body.classList.remove('timer-active');
+    };
+  }, [algorithm]);
+
   useEffect(() => {
     // Add keyboard event listener
     document.addEventListener('keydown', handleKeyDown);

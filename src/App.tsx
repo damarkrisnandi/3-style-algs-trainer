@@ -173,11 +173,16 @@ function App() {
 
       {/* Footer */}
       <footer className="border-t bg-white mt-auto">
-        <div className="container mx-auto px-4 py-6 text-center text-sm text-slate-500">
+        <div className="container mx-auto px-4 py-4 md:py-6 text-center text-sm text-slate-500">
           <p>Practice consistently to improve your 3-style corner execution!</p>
           <p className="mt-1">
-            <kbd className="px-2 py-1 bg-slate-100 rounded text-xs">Space</kbd> to start timer • 
-            <kbd className="px-2 py-1 bg-slate-100 rounded text-xs ml-1">Esc</kbd> to reset
+            <span className="hidden md:inline">
+              <kbd className="px-2 py-1 bg-slate-100 rounded text-xs">Space</kbd> to start timer • 
+              <kbd className="px-2 py-1 bg-slate-100 rounded text-xs ml-1">Esc</kbd> to reset
+            </span>
+            <span className="md:hidden">
+              Use on-screen buttons for timer controls on mobile
+            </span>
           </p>
         </div>
       </footer>

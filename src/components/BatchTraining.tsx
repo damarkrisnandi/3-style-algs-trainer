@@ -48,6 +48,19 @@ export const BatchTraining = ({ algorithms }: BatchTrainingProps) => {
     return () => clearInterval(interval);
   }, [isTimerRunning, session?.startTime]);
 
+  // Add body class for mobile timer
+  useEffect(() => {
+    if (session?.isActive) {
+      document.body.classList.add('timer-active');
+    } else {
+      document.body.classList.remove('timer-active');
+    }
+    
+    return () => {
+      document.body.classList.remove('timer-active');
+    };
+  }, [session?.isActive]);
+
   // Keyboard controls
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {

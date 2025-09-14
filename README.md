@@ -1,22 +1,31 @@
-# 3-Style Corner Algorithms Trainer
+# 🎲 3-Style Corner Algorithms Trainer
 
-A modern React application for training 3-style corner algorithms for Rubik's cube speedsolving. Built with React, TypeScript, Vite, Tailwind CSS v4, and Shadcn UI.
+A comprehensive training application for mastering 3-style corner algorithms in speedcubing. Built with React, TypeScript, Vite, Tailwind CSS, and Shadcn UI with full mobile optimization.
 
-## Features
+## ✨ Features
 
 ### 🃏 Flashcards
-- Study algorithms with question/answer format
-- Filter to show only unmemorized algorithms
-- Navigate through algorithms with keyboard or buttons
-- Direct practice mode integration
+- Interactive flashcard system for studying corner algorithms
+- Show/hide memorized algorithms filter
+- Touch/swipe navigation on mobile devices
+- Progress tracking and statistics display
+- Direct integration with timer for practice
 
 ### ⏱️ Timer
-- Keyboard-controlled timer using spacebar
-- Real-time algorithm display
+- Keyboard-controlled timer (Space to start/stop, Esc to reset)
+- Mobile-friendly touch controls with large buttons
 - Automatic time recording and statistics
-- Shows best time, average, and memorization status
+- Real-time display with millisecond precision
+- Algorithm-specific timing data
 
-### 📊 Records & Statistics
+### 📊 Batch Training
+- Random algorithm selection by setup move categories
+- Configurable batch sizes (5, 10, 15, 20 algorithms)
+- Session statistics and progress tracking
+- Mobile-optimized interface with fixed bottom controls
+- Automatic session completion summary
+
+### 📈 Records & Statistics
 - Track timing statistics for each algorithm
 - View overall progress and memorization status
 - Detailed algorithm-specific records

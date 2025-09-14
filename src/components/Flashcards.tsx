@@ -50,6 +50,33 @@ export const Flashcards = ({ algorithms, onAlgorithmSelect }: FlashcardsProps) =
     }
   };
 
+  // Touch/swipe handling for mobile
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (e.touches.length === 1) {
+      const touch = e.touches[0];
+      setTouchStartX(touch.clientX);
+    }
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (e.changedTouches.length === 1) {
+      const touch = e.changedTouches[0];
+      const touchEndX = touch.clientX;
+      const deltaX = touchEndX - touchStartX;
+      
+      // Require minimum swipe distance
+      if (Math.abs(deltaX) > 50) {
+        if (deltaX > 0) {
+          prevCard(); // Swipe right = previous
+        } else {
+          nextCard(); // Swipe left = next
+        }
+      }
+    }
+  };
+
+  const [touchStartX, setTouchStartX] = useState(0);
+
   if (filteredAlgorithms.length === 0) {
     return (
       <Card className="w-full max-w-lg mx-auto">
@@ -79,7 +106,11 @@ export const Flashcards = ({ algorithms, onAlgorithmSelect }: FlashcardsProps) =
   const algorithmStats = getAlgorithmStats(`${currentAlgorithm.corners}-${currentAlgorithm.notation}`);
 
   return (
-    <Card className="w-full max-w-lg mx-auto">
+    <Card 
+      className="w-full max-w-lg mx-auto"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
       <CardHeader>
         <CardTitle className="text-center flex items-center justify-between">
           <span>Flashcards</span>

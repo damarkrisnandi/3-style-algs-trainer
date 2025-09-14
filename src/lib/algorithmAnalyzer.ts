@@ -31,25 +31,79 @@ export const analyze3StyleAlgorithm = (algorithm: string): {
     };
   }
   
-  // Check for other commutator formats like [A, B] or [A: B]
-  const simpleCommutatorMatch = cleanAlg.match(/^\[([^,\]]+)[,:]\s*([^\]]+)\]$/);
+  // Check for simple commutator format [A, B]
+  const simpleCommutatorMatch = cleanAlg.match(/^\[([^,\]]+),\s*([^\]]+)\]$/);
   
   if (simpleCommutatorMatch) {
     const firstPart = simpleCommutatorMatch[1].trim();
     const secondPart = simpleCommutatorMatch[2].trim();
     
-    // For simple commutators, consider the first part as setup
-    const setupCount = countMoves(firstPart);
+    // In simple commutator [A, B], there's no explicit setup
+    // This is a pure commutator, so setup count is 0
+    return {
+      setupCategory: 'setup-0',
+      setupMoves: '',
+      core: `[${firstPart}, ${secondPart}]`,
+      setupCount: 0
+    };
+  }
+  
+  // Check for nested commutator format [A: B] (where B might be another commutator)
+  const nestedCommutatorMatch = cleanAlg.match(/^\[([^:\]]+):\s*([^\]]+)\]$/);
+  
+  if (nestedCommutatorMatch) {
+    const setupPart = nestedCommutatorMatch[1].trim();
+    const corePart = nestedCommutatorMatch[2].trim();
+    
+    // Count setup moves
+    const setupCount = countMoves(setupPart);
     
     return {
       setupCategory: `setup-${setupCount}`,
-      setupMoves: firstPart,
-      core: secondPart,
+      setupMoves: setupPart,
+      core: corePart,
       setupCount
     };
   }
   
-  // If not in standard commutator format, treat as direct algorithm (setup-0)
+  // If not in commutator format, analyze the algorithm sequence
+  // Try to identify if there are setup moves at the beginning and end
+  const moveSequence = cleanAlg.split(/\s+/).filter(move => move.length > 0);
+  
+  if (moveSequence.length === 0) {
+    return {
+      setupCategory: 'setup-0',
+      setupMoves: '',
+      core: cleanAlg,
+      setupCount: 0
+    };
+  }
+  
+  // For direct algorithms, check if it follows a pattern like setup + core + setup'
+  // This is a simplified heuristic - in practice, this would need more sophisticated analysis
+  if (moveSequence.length >= 6) {
+    // Try to detect potential setup patterns
+    // Look for repeated move patterns or common setup sequences
+    const firstQuarter = Math.floor(moveSequence.length / 4);
+    const lastQuarter = Math.floor(moveSequence.length / 4);
+    
+    if (firstQuarter > 0 && lastQuarter > 0) {
+      const potentialSetup = moveSequence.slice(0, firstQuarter);
+      const potentialUndoSetup = moveSequence.slice(-lastQuarter);
+      
+      // Check if the end might be the inverse of the beginning (simplified check)
+      if (areMovesInverse(potentialSetup, potentialUndoSetup)) {
+        return {
+          setupCategory: `setup-${potentialSetup.length}`,
+          setupMoves: potentialSetup.join(' '),
+          core: moveSequence.slice(firstQuarter, -lastQuarter).join(' '),
+          setupCount: potentialSetup.length
+        };
+      }
+    }
+  }
+  
+  // If no pattern detected, treat as direct algorithm (setup-0)
   return {
     setupCategory: 'setup-0',
     setupMoves: '',
@@ -71,8 +125,60 @@ const countMoves = (moves: string): number => {
   return movesList.filter(move => {
     // Remove modifiers like ', 2, etc. and check if it's a valid move
     const cleanMove = move.replace(/['2]/g, '');
-    return cleanMove.length > 0 && /^[RLUDFBMES]/.test(cleanMove);
+    return cleanMove.length > 0 && /^[RLUDFBMES]|^[xyz]|^Lw|^Rw|^Uw|^Dw|^Fw|^Bw/.test(cleanMove);
   }).length;
+};
+
+/**
+ * Check if two move sequences are inverses of each other (simplified)
+ */
+const areMovesInverse = (moves1: string[], moves2: string[]): boolean => {
+  if (moves1.length !== moves2.length) return false;
+  
+  for (let i = 0; i < moves1.length; i++) {
+    const move1 = moves1[i];
+    const move2 = moves2[moves2.length - 1 - i]; // Compare with reverse order
+    
+    // Simplified inverse check - this could be more sophisticated
+    if (!isInverseMove(move1, move2)) {
+      return false;
+    }
+  }
+  
+  return true;
+};
+
+/**
+ * Check if two individual moves are inverses of each other
+ */
+const isInverseMove = (move1: string, move2: string): boolean => {
+  // Remove spaces and normalize
+  const m1 = move1.trim();
+  const m2 = move2.trim();
+  
+  // Get base move (without modifiers)
+  const getBaseMove = (move: string) => move.replace(/['2]/g, '');
+  const base1 = getBaseMove(m1);
+  const base2 = getBaseMove(m2);
+  
+  // Must be same base move
+  if (base1 !== base2) return false;
+  
+  // Check if one is the inverse of the other
+  const isClockwise1 = !m1.includes("'");
+  const isClockwise2 = !m2.includes("'");
+  const isDouble1 = m1.includes('2');
+  const isDouble2 = m2.includes('2');
+  
+  // Double moves are their own inverse
+  if (isDouble1 && isDouble2) return true;
+  
+  // Clockwise and counterclockwise are inverses
+  if (!isDouble1 && !isDouble2) {
+    return isClockwise1 !== isClockwise2;
+  }
+  
+  return false;
 };
 
 /**
