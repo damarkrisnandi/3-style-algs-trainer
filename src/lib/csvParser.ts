@@ -29,17 +29,25 @@ export const parseCSVAlgorithms = async (): Promise<Algorithm[]> => {
         const algorithm = cells[j]?.trim();
         const colCorner = headers[j]?.trim();
         
-        if (!algorithm || !colCorner || algorithm === '-' || algorithm === 'i' || algorithm === '') {
+        if (!algorithm || !colCorner || algorithm === '-' || algorithm === 'i' || algorithm === '' || algorithm.length < 3) {
           continue;
         }
+
+        // Clean up algorithm string - remove quotes and extra spaces
+        const cleanAlgorithm = algorithm.replace(/^"|"$/g, '').trim();
         
+        // Skip if still empty or just a placeholder
+        if (!cleanAlgorithm || cleanAlgorithm === '-' || cleanAlgorithm === 'i') {
+          continue;
+        }
+
         // Generate notation based on position in matrix
         const notation = generateNotation(i - 1, j - 1);
         
         algorithms.push({
           corners: `${rowCorner}-${colCorner}`,
           notation,
-          alg: algorithm
+          alg: cleanAlgorithm
         });
       }
     }
