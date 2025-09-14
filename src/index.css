@@ -22,3 +22,26 @@
   --color-ring: #0f172a;
   --radius: 0.5rem;
 }
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Ensure mobile timer buttons don't interfere with content */
+  body.timer-active {
+    padding-bottom: 100px;
+  }
+  
+  /* Hide scrollbars on mobile for cleaner look */
+  .mobile-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .mobile-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

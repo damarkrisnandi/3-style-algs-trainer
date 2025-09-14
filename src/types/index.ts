@@ -2,6 +2,9 @@ export interface Algorithm {
   corners: string;
   notation: string;
   alg: string;
+  setupCategory?: string;
+  setupMoves?: string;
+  core?: string;
 }
 
 export interface TimeRecord {
@@ -22,4 +25,10 @@ export interface AlgorithmStats {
   bestTime: number;
   attempts: number;
   isMemorized: boolean;
+}
+
+export interface SetupCategory {
+  name: string;
+  count: number;
+  algorithms: Algorithm[];
 }

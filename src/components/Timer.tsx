@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import type { Algorithm } from '@/types';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
+import { Play, Pause, RotateCcw } from 'lucide-react';
 
 interface TimerProps {
   algorithm: Algorithm | null;
@@ -115,63 +116,105 @@ export const Timer = ({ algorithm, onTimeRecorded }: TimerProps) => {
   }
 
   return (
-    <Card className="w-full max-w-md mx-auto">
-      <CardHeader>
-        <CardTitle className="text-center">Timer</CardTitle>
-        <div className="text-center space-y-2">
-          <div className="text-sm font-medium">{algorithm.corners}</div>
-          <div className="text-xs text-muted-foreground">Notation: {algorithm.notation}</div>
-          <div className="text-xs font-mono bg-muted p-2 rounded">{algorithm.alg}</div>
-        </div>
-      </CardHeader>
-      <CardContent className="text-center space-y-4">
-        <div className="text-6xl font-mono font-bold">
-          {formatTime(time)}
-        </div>
-        
-        <div className="space-y-2">
-          {!isRunning && !isReady && (
-            <div className="text-sm text-muted-foreground">
-              Press <kbd className="px-2 py-1 bg-muted rounded text-xs">Space</kbd> to get ready
-            </div>
-          )}
-          {isReady && !isRunning && (
-            <div className="text-sm text-green-600">
-              Press <kbd className="px-2 py-1 bg-muted rounded text-xs">Space</kbd> to start timer
-            </div>
-          )}
-          {isRunning && (
-            <div className="text-sm text-red-600">
-              Press <kbd className="px-2 py-1 bg-muted rounded text-xs">Space</kbd> to stop timer
-            </div>
-          )}
-          <div className="text-xs text-muted-foreground">
-            Press <kbd className="px-2 py-1 bg-muted rounded text-xs">Esc</kbd> to reset
+    <>
+      {/* Mobile Timer Controls */}
+      {algorithm && (
+        <div className="md:hidden fixed bottom-4 left-4 right-4 z-50">
+          <div className="flex justify-center space-x-4">
+            <Button
+              size="lg"
+              variant={isRunning ? "destructive" : "default"}
+              onClick={isRunning ? stopTimer : (isReady ? startTimer : undefined)}
+              disabled={!isReady && !isRunning}
+              className="flex-1 h-16 text-lg font-semibold"
+            >
+              {isRunning ? (
+                <>
+                  <Pause className="w-6 h-6 mr-2" />
+                  Stop
+                </>
+              ) : (
+                <>
+                  <Play className="w-6 h-6 mr-2" />
+                  {isReady ? 'Start' : 'Get Ready'}
+                </>
+              )}
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={resetTimer}
+              disabled={isRunning}
+              className="h-16 px-6"
+            >
+              <RotateCcw className="w-6 h-6" />
+            </Button>
           </div>
         </div>
+      )}
 
-        {algorithmStats && (
-          <div className="text-xs space-y-1 text-muted-foreground border-t pt-3">
-            <div>Best: {formatTime(algorithmStats.bestTime)}</div>
-            <div>Average: {formatTime(algorithmStats.averageTime)}</div>
-            <div>Attempts: {algorithmStats.attempts}</div>
-            <div className={algorithmStats.isMemorized ? 'text-green-600' : 'text-yellow-600'}>
-              {algorithmStats.isMemorized ? '✓ Memorized' : '◯ Learning'}
+      <Card className="w-full max-w-md mx-auto">
+        <CardHeader>
+          <CardTitle className="text-center">Timer</CardTitle>
+          <div className="text-center space-y-2">
+            <div className="text-sm font-medium">{algorithm.corners}</div>
+            <div className="text-xs text-muted-foreground">Notation: {algorithm.notation}</div>
+            <div className="text-xs font-mono bg-muted p-2 rounded">{algorithm.alg}</div>
+          </div>
+        </CardHeader>
+        <CardContent className="text-center space-y-4">
+          <div className="text-4xl md:text-6xl font-mono font-bold">
+            {formatTime(time)}
+          </div>
+          
+          <div className="space-y-2">
+            {!isRunning && !isReady && (
+              <div className="text-sm text-muted-foreground">
+                <span className="hidden md:inline">Press <kbd className="px-2 py-1 bg-muted rounded text-xs">Space</kbd> to get ready</span>
+                <span className="md:hidden">Tap "Get Ready" to prepare</span>
+              </div>
+            )}
+            {isReady && !isRunning && (
+              <div className="text-sm text-green-600">
+                <span className="hidden md:inline">Press <kbd className="px-2 py-1 bg-muted rounded text-xs">Space</kbd> to start timer</span>
+                <span className="md:hidden">Tap "Start" to begin timing</span>
+              </div>
+            )}
+            {isRunning && (
+              <div className="text-sm text-red-600">
+                <span className="hidden md:inline">Press <kbd className="px-2 py-1 bg-muted rounded text-xs">Space</kbd> to stop timer</span>
+                <span className="md:hidden">Tap "Stop" to finish</span>
+              </div>
+            )}
+            <div className="text-xs text-muted-foreground hidden md:block">
+              Press <kbd className="px-2 py-1 bg-muted rounded text-xs">Esc</kbd> to reset
             </div>
           </div>
-        )}
 
-        <div className="flex gap-2 justify-center">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={resetTimer}
-            disabled={isRunning}
-          >
-            Reset
-          </Button>
-        </div>
-      </CardContent>
-    </Card>
+          {algorithmStats && (
+            <div className="text-xs space-y-1 text-muted-foreground border-t pt-3">
+              <div>Best: {formatTime(algorithmStats.bestTime)}</div>
+              <div>Average: {formatTime(algorithmStats.averageTime)}</div>
+              <div>Attempts: {algorithmStats.attempts}</div>
+              <div className={algorithmStats.isMemorized ? 'text-green-600' : 'text-yellow-600'}>
+                {algorithmStats.isMemorized ? '✓ Memorized' : '◯ Learning'}
+              </div>
+            </div>
+          )}
+
+          {/* Desktop Controls */}
+          <div className="hidden md:flex gap-2 justify-center">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={resetTimer}
+              disabled={isRunning}
+            >
+              Reset
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+    </>
   );
 };
