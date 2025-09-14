@@ -1,0 +1,82 @@
+[
+  {
+    "corners": "FUL-ULB",
+    "notation": "EA",
+    "alg": "F U F' F' U'"
+  },
+  {
+    "corners": "FUR-URB",
+    "notation": "EB",
+    "alg": "R U R' U' R U R'"
+  },
+  {
+    "corners": "FDL-DLB",
+    "notation": "EC",
+    "alg": "L' U' L U L' U' L"
+  },
+  {
+    "corners": "FDR-DRB",
+    "notation": "ED",
+    "alg": "R' U' R U' R' U R"
+  },
+  {
+    "corners": "BUL-UBR",
+    "notation": "FA",
+    "alg": "U R U' R' U R U' R'"
+  },
+  {
+    "corners": "BUR-UBL",
+    "notation": "FB",
+    "alg": "U' L' U L U' L' U L"
+  },
+  {
+    "corners": "BDL-DBR",
+    "notation": "FC",
+    "alg": "D L D' L' D L D' L'"
+  },
+  {
+    "corners": "BDR-DBL",
+    "notation": "FD",
+    "alg": "D' R' D R D' R' D R"
+  },
+  {
+    "corners": "UFL-LBU",
+    "notation": "GA",
+    "alg": "F U F' U F U' F'"
+  },
+  {
+    "corners": "UFR-RBU",
+    "notation": "GB",
+    "alg": "R' U' R U' R' U R"
+  },
+  {
+    "corners": "UBL-LFU",
+    "notation": "GC",
+    "alg": "L U L' U L U' L'"
+  },
+  {
+    "corners": "UBR-RFU",
+    "notation": "GD",
+    "alg": "R U R' U R U' R'"
+  },
+  {
+    "corners": "DFL-LFB",
+    "notation": "HA",
+    "alg": "F' D' F D F' D F"
+  },
+  {
+    "corners": "DFR-RFB",
+    "notation": "HB",
+    "alg": "R D R' D' R D' R'"
+  },
+  {
+    "corners": "DBL-LBF",
+    "notation": "HC",
+    "alg": "L' D' L D L' D L"
+  },
+  {
+    "corners": "DBR-RBF",
+    "notation": "HD",
+    "alg": "R' D' R D R' D R"
+  }
+]
