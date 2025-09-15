@@ -1,82 +1,1892 @@
 [
   {
-    "corners": "FUL-ULB",
-    "notation": "EA",
-    "alg": "F U F' F' U'"
+    "corners": "UBL-URB",
+    "notation": "AB",
+    "alg": "[Lw' : [R' D2 R, U]]"
   },
   {
-    "corners": "FUR-URB",
-    "notation": "EB",
-    "alg": "R U R' U' R U R'"
+    "corners": "UBL-ULF",
+    "notation": "AD",
+    "alg": "[R' D' U' : [R' D R, U']]"
   },
   {
-    "corners": "FDL-DLB",
-    "notation": "EC",
-    "alg": "L' U' L U L' U' L"
+    "corners": "UBL-FUL",
+    "notation": "AE",
+    "alg": "[Lw' : [R' D2 R, U2]]"
   },
   {
-    "corners": "FDR-DRB",
-    "notation": "ED",
-    "alg": "R' U' R U' R' U R"
+    "corners": "UBL-FDR",
+    "notation": "AG",
+    "alg": "[D' : [U2, R' D R]]"
   },
   {
-    "corners": "BUL-UBR",
-    "notation": "FA",
-    "alg": "U R U' R' U R U' R'"
-  },
-  {
-    "corners": "BUR-UBL",
-    "notation": "FB",
-    "alg": "U' L' U L U' L' U L"
-  },
-  {
-    "corners": "BDL-DBR",
-    "notation": "FC",
-    "alg": "D L D' L' D L D' L'"
-  },
-  {
-    "corners": "BDR-DBL",
-    "notation": "FD",
-    "alg": "D' R' D R D' R' D R"
-  },
-  {
-    "corners": "UFL-LBU",
-    "notation": "GA",
-    "alg": "F U F' U F U' F'"
-  },
-  {
-    "corners": "UFR-RBU",
-    "notation": "GB",
-    "alg": "R' U' R U' R' U R"
+    "corners": "UBL-FLD",
+    "notation": "AH",
+    "alg": "[D' U' : [U2, R D' R']]"
   },
   {
     "corners": "UBL-LFU",
-    "notation": "GC",
-    "alg": "L U L' U L U' L'"
+    "notation": "AJ",
+    "alg": "[F : [R' D' R, U2]]"
   },
   {
-    "corners": "UBR-RFU",
+    "corners": "UBL-LDF",
+    "notation": "AK",
+    "alg": "[U2, R' D R]"
+  },
+  {
+    "corners": "UBL-LBD",
+    "notation": "AL",
+    "alg": "[U' : [U2, R D' R']]"
+  },
+  {
+    "corners": "UBL-BUR",
+    "notation": "AM",
+    "alg": "[R' D' : [R' D R, U2]]"
+  },
+  {
+    "corners": "UBL-BDL",
+    "notation": "AO",
+    "alg": "[U2, R' D2 R]"
+  },
+  {
+    "corners": "UBL-BRD",
+    "notation": "AP",
+    "alg": "[D U' : [U2, R D' R']]"
+  },
+  {
+    "corners": "UBL-DFL",
+    "notation": "AQ",
+    "alg": "[R F' R' U' : [U2, R D R']]"
+  },
+  {
+    "corners": "UBL-RBU",
+    "notation": "AR",
+    "alg": "[R D R' : [U2, R' D2 R]]"
+  },
+  {
+    "corners": "UBL-RDB",
+    "notation": "AS",
+    "alg": "[U' : [U2, R D R']]"
+  },
+  {
+    "corners": "UBL-RFD",
+    "notation": "AT",
+    "alg": "[U2, R' D' R]"
+  },
+  {
+    "corners": "UBL-DRF",
+    "notation": "AV",
+    "alg": "[D R D' R' : [U2, R' D R]]"
+  },
+  {
+    "corners": "UBL-DBR",
+    "notation": "AW",
+    "alg": "[R D' R' : [U2, R' D R]]"
+  },
+  {
+    "corners": "UBL-DLB",
+    "notation": "AX",
+    "alg": "[R' z R' : [U2, R' D R]]"
+  },
+  {
+    "corners": "URB-UBL",
+    "notation": "BA",
+    "alg": "[Lw': [U, R' D2 R]]"
+  },
+  {
+    "corners": "URB-ULF",
+    "notation": "BD",
+    "alg": "[R F' R2' : [R U R', D]]"
+  },
+  {
+    "corners": "URB-FUL",
+    "notation": "BE",
+    "alg": "[R : [R D R', U2]]"
+  },
+  {
+    "corners": "URB-FDR",
+    "notation": "BG",
+    "alg": "[D' : [U, R' D R]]"
+  },
+  {
+    "corners": "URB-FLD",
+    "notation": "BH",
+    "alg": "[D : [U, R' D' R]]"
+  },
+  {
+    "corners": "URB-LUB",
+    "notation": "BI",
+    "alg": "[R : [R D R', U]]"
+  },
+  {
+    "corners": "URB-LFU",
+    "notation": "BJ",
+    "alg": "[R' : [U', R' D' R]]"
+  },
+  {
+    "corners": "URB-LDF",
+    "notation": "BK",
+    "alg": "[U, R' D R]"
+  },
+  {
+    "corners": "URB-LBD",
+    "notation": "BL",
+    "alg": "[R D' R', U']"
+  },
+  {
+    "corners": "URB-BLU",
+    "notation": "BN",
+    "alg": "[R' : [U2, R' D' R]]"
+  },
+  {
+    "corners": "URB-BDL",
+    "notation": "BO",
+    "alg": "[U, R' D2 R]"
+  },
+  {
+    "corners": "URB-BRD",
+    "notation": "BP",
+    "alg": "[D : [R' D' R, U']]"
+  },
+  {
+    "corners": "URB-DFL",
+    "notation": "BQ",
+    "alg": "[x' : [R U R', D2]]"
+  },
+  {
+    "corners": "URB-RDB",
+    "notation": "BS",
+    "alg": "[R D R', U']"
+  },
+  {
+    "corners": "URB-RFD",
+    "notation": "BT",
+    "alg": "[U, R' D' R]"
+  },
+  {
+    "corners": "URB-DRF",
+    "notation": "BV",
+    "alg": "[U, R' D R U' R D' R']"
+  },
+  {
+    "corners": "URB-DBR",
+    "notation": "BW",
+    "alg": "[U R D' R' : [R' D R, U']]"
+  },
+  {
+    "corners": "URB-DLB",
+    "notation": "BX",
+    "alg": "[x : [D2, R' U' R]]"
+  },
+  {
+    "corners": "ULF-UBL",
+    "notation": "DA",
+    "alg": "[R' D' R U2: [R' D R, U]]"
+  },
+  {
+    "corners": "ULF-URB",
+    "notation": "DB",
+    "alg": "[R F' R2': [D , R U R']]"
+  },
+  {
+    "corners": "ULF-FDR",
+    "notation": "DG",
+    "alg": "[D' : [U', R' D R]]"
+  },
+  {
+    "corners": "ULF-FLD",
+    "notation": "DH",
+    "alg": "[D' : [U', R' D' R]]"
+  },
+  {
+    "corners": "ULF-LUB",
+    "notation": "DI",
+    "alg": "[U' R : [U2, R D R']]"
+  },
+  {
+    "corners": "ULF-LDF",
+    "notation": "DK",
+    "alg": "[U', R' D R]"
+  },
+  {
+    "corners": "ULF-LBD",
+    "notation": "DL",
+    "alg": "[U' : [U', R D' R']]"
+  },
+  {
+    "corners": "ULF-BUR",
+    "notation": "DM",
+    "alg": "[U' R : [U, R D R']]"
+  },
+  {
+    "corners": "ULF-BLU",
+    "notation": "DN",
+    "alg": "[U' R' : [R' D' R, U']]"
+  },
+  {
+    "corners": "ULF-BDL",
+    "notation": "DO",
+    "alg": "[U', R' D2 R]"
+  },
+  {
+    "corners": "ULF-BRD",
+    "notation": "DP",
+    "alg": "[D' : [U', R' D' R]]"
+  },
+  {
+    "corners": "ULF-DFL",
+    "notation": "DQ",
+    "alg": "[U' x' : [D2, R U R']]"
+  },
+  {
+    "corners": "ULF-RBU",
+    "notation": "DR",
+    "alg": "[U' R' : [R' D' R, U2]]"
+  },
+  {
+    "corners": "ULF-RDB",
+    "notation": "DS",
+    "alg": "[U' : [U', R D R']]"
+  },
+  {
+    "corners": "ULF-RFD",
+    "notation": "DT",
+    "alg": "[U', R' D' R]"
+  },
+  {
+    "corners": "ULF-DRF",
+    "notation": "DV",
+    "alg": "[U', R' D R U' R D' R']"
+  },
+  {
+    "corners": "ULF-DBR",
+    "notation": "DW",
+    "alg": "[R D' R' : [U', R' D R]]"
+  },
+  {
+    "corners": "ULF-DLB",
+    "notation": "DX",
+    "alg": "[R' D' R : [D, R U' R']]"
+  },
+  {
+    "corners": "FUL-UBL",
+    "notation": "EA",
+    "alg": "[Lw': [U2, R' D2 R]]"
+  },
+  {
+    "corners": "FUL-URB",
+    "notation": "EB",
+    "alg": "[R: [U2, R D R']]"
+  },
+  {
+    "corners": "FUL-FDR",
+    "notation": "EG",
+    "alg": "D' R' D F2 D' R D R' F2 R"
+  },
+  {
+    "corners": "FUL-FLD",
+    "notation": "EH",
+    "alg": "[R U : [U2, R' D R]]"
+  },
+  {
+    "corners": "FUL-LUB",
+    "notation": "EI",
+    "alg": "[Lw' U: [R D' R', U2]]"
+  },
+  {
+    "corners": "FUL-LDF",
+    "notation": "EK",
+    "alg": "D R' F2 R D' R' D F2 D' R"
+  },
+  {
+    "corners": "FUL-LBD",
+    "notation": "EL",
+    "alg": "[Lw': [U2, R' D R]]"
+  },
+  {
+    "corners": "FUL-BUR",
+    "notation": "EM",
+    "alg": "[R D'U : [U2, R' D' R]]"
+  },
+  {
+    "corners": "FUL-BLU",
+    "notation": "EN",
+    "alg": "[R U R' D' : [R' D R, U2]]"
+  },
+  {
+    "corners": "FUL-BDL",
+    "notation": "EO",
+    "alg": "D R' D F2 D' R D R' F2 R D2"
+  },
+  {
+    "corners": "FUL-BRD",
+    "notation": "EP",
+    "alg": "[R U : [U2, R' D' R]]"
+  },
+  {
+    "corners": "FUL-DFL",
+    "notation": "EQ",
+    "alg": "[R UD : [U2, R' D' R]]"
+  },
+  {
+    "corners": "FUL-RBU",
+    "notation": "ER",
+    "alg": "[R' : [U', R2 D' R2' D R2]]"
+  },
+  {
+    "corners": "FUL-RDB",
+    "notation": "ES",
+    "alg": "[Lw' U' : [U2, R D R']]"
+  },
+  {
+    "corners": "FUL-RFD",
+    "notation": "ET",
+    "alg": "[Lw' : [U2, R' D' R]]"
+  },
+  {
+    "corners": "FUL-DRF",
+    "notation": "EV",
+    "alg": "[D' R UD : [U2, R' D' R]]"
+  },
+  {
+    "corners": "FUL-DBR",
+    "notation": "EW",
+    "alg": "[D R : [U2, R D' R']]"
+  },
+  {
+    "corners": "FUL-DLB",
+    "notation": "EX",
+    "alg": "[R : [U2, R D' R']]"
+  },
+  {
+    "corners": "FDR-UBL",
+    "notation": "GA",
+    "alg": "[D': [R' D R, U2]]"
+  },
+  {
+    "corners": "FDR-URB",
+    "notation": "GB",
+    "alg": "[D': [R' D R, U]]"
+  },
+  {
+    "corners": "FDR-ULF",
     "notation": "GD",
-    "alg": "R U R' U R U' R'"
+    "alg": "[D': [R' D R, U']]"
   },
   {
-    "corners": "DFL-LFB",
+    "corners": "FDR-FUL",
+    "notation": "GE",
+    "alg": "D' R' D F2 D' R D R' F2 R"
+  },
+  {
+    "corners": "FDR-FLD",
+    "notation": "GH",
+    "alg": "[z : [D, R U' R']]"
+  },
+  {
+    "corners": "FDR-LUB",
+    "notation": "GI",
+    "alg": "[R U R': [R' D' R, U']]"
+  },
+  {
+    "corners": "FDR-LFU",
+    "notation": "GJ",
+    "alg": "[z: [D, R U R']]"
+  },
+  {
+    "corners": "FDR-LDF",
+    "notation": "GK",
+    "alg": "[U: [D, R U' R']]"
+  },
+  {
+    "corners": "FDR-LBD",
+    "notation": "GL",
+    "alg": "[U R U': [R D' R', U']]"
+  },
+  {
+    "corners": "FDR-BUR",
+    "notation": "GM",
+    "alg": "[D' R' U : [D, R U' R']]"
+  },
+  {
+    "corners": "FDR-BLU",
+    "notation": "GN",
+    "alg": "[Lw D' : [R' D R, U']]"
+  },
+  {
+    "corners": "FDR-BDL",
+    "notation": "GO",
+    "alg": "[U : [D2, R U' R']]"
+  },
+  {
+    "corners": "FDR-BRD",
+    "notation": "GP",
+    "alg": "[D R D : [D2, R' U' R]]"
+  },
+  {
+    "corners": "FDR-DFL",
+    "notation": "GQ",
+    "alg": "U R U' F2 U R' U' R F2 R'"
+  },
+  {
+    "corners": "FDR-RBU",
+    "notation": "GR",
+    "alg": "[U' R' U : [U2, R D R']]"
+  },
+  {
+    "corners": "FDR-RDB",
+    "notation": "GS",
+    "alg": "[U : [D', R U' R']]"
+  },
+  {
+    "corners": "FDR-DBR",
+    "notation": "GW",
+    "alg": "[U R D' : [R' D R, U']]"
+  },
+  {
+    "corners": "FDR-DLB",
+    "notation": "GX",
+    "alg": "[z : [D, R U2 R']]"
+  },
+  {
+    "corners": "FLD-UBL",
     "notation": "HA",
-    "alg": "F' D' F D F' D F"
+    "alg": "[D' U': [R D' R', U2]]"
   },
   {
-    "corners": "DFR-RFB",
+    "corners": "FLD-URB",
     "notation": "HB",
-    "alg": "R D R' D' R D' R'"
+    "alg": "[D: [R' D' R, U]]"
   },
   {
-    "corners": "DBL-LBF",
-    "notation": "HC",
-    "alg": "L' D' L D L' D L"
-  },
-  {
-    "corners": "DBR-RBF",
+    "corners": "FLD-ULF",
     "notation": "HD",
-    "alg": "R' D' R D R' D R"
+    "alg": "[D': [R' D' R, U']]"
+  },
+  {
+    "corners": "FLD-FUL",
+    "notation": "HE",
+    "alg": "[R U: [R' D R, U2]]"
+  },
+  {
+    "corners": "FLD-FDR",
+    "notation": "HG",
+    "alg": "[z: [R U' R', D]]"
+  },
+  {
+    "corners": "FLD-LUB",
+    "notation": "HI",
+    "alg": "[R U: [R' D R, U]]"
+  },
+  {
+    "corners": "FLD-LFU",
+    "notation": "HJ",
+    "alg": "[D R' U': [D', R U R']]"
+  },
+  {
+    "corners": "FLD-LBD",
+    "notation": "HL",
+    "alg": "[D2: [R U R', D']]"
+  },
+  {
+    "corners": "FLD-BUR",
+    "notation": "HM",
+    "alg": "[z : [R U' R', D']]"
+  },
+  {
+    "corners": "FLD-BLU",
+    "notation": "HN",
+    "alg": "[D x' : [D', R U' R']]"
+  },
+  {
+    "corners": "FLD-BDL",
+    "notation": "HO",
+    "alg": "[D' R D' : [D2, R' U' R]]"
+  },
+  {
+    "corners": "FLD-BRD",
+    "notation": "HP",
+    "alg": "[D : [D2, R U R']]"
+  },
+  {
+    "corners": "FLD-RBU",
+    "notation": "HR",
+    "alg": "[F' U : [U2, R' D' R]]"
+  },
+  {
+    "corners": "FLD-RDB",
+    "notation": "HS",
+    "alg": "[R D : [R' U' R, D]]"
+  },
+  {
+    "corners": "FLD-RFD",
+    "notation": "HT",
+    "alg": "[R U R', D]"
+  },
+  {
+    "corners": "FLD-DRF",
+    "notation": "HV",
+    "alg": "[R U' R' : [R' D R, U2]]"
+  },
+  {
+    "corners": "FLD-DBR",
+    "notation": "HW",
+    "alg": "[D R : [U’, R D' R']]"
+  },
+  {
+    "corners": "FLD-DLB",
+    "notation": "HX",
+    "alg": "[z' U' : [D', R U R']]"
+  },
+  {
+    "corners": "LUB-URB",
+    "notation": "IB",
+    "alg": "[R: [U, R D R']]"
+  },
+  {
+    "corners": "LUB-ULF",
+    "notation": "ID",
+    "alg": "[U' R: [R D R', U2]]"
+  },
+  {
+    "corners": "LUB-FUL",
+    "notation": "IE",
+    "alg": "[Lw' U : [U2, R D' R']]"
+  },
+  {
+    "corners": "LUB-FDR",
+    "notation": "IG",
+    "alg": "[R U R' : [U', R' D' R]]"
+  },
+  {
+    "corners": "LUB-FLD",
+    "notation": "IH",
+    "alg": "[R U : [U, R' D R]]"
+  },
+  {
+    "corners": "LUB-LFU",
+    "notation": "IJ",
+    "alg": "[z : [R' D' R, U]]"
+  },
+  {
+    "corners": "LUB-LDF",
+    "notation": "IK",
+    "alg": "[U R' : [R' D R, U']]"
+  },
+  {
+    "corners": "LUB-LBD",
+    "notation": "IL",
+    "alg": "[z U : [U, R' D' R]]"
+  },
+  {
+    "corners": "LUB-BUR",
+    "notation": "IM",
+    "alg": "[x : [U' L U, R']]"
+  },
+  {
+    "corners": "LUB-BDL",
+    "notation": "IO",
+    "alg": "[U R': [U', R' D2 R]"
+  },
+  {
+    "corners": "LUB-BRD",
+    "notation": "IP",
+    "alg": "[R U : [U, R' D' R]]"
+  },
+  {
+    "corners": "LUB-DFL",
+    "notation": "IQ",
+    "alg": "[R : [U, R D2 R']]"
+  },
+  {
+    "corners": "LUB-RBU",
+    "notation": "IR",
+    "alg": "[R : [U, R2' D R2 D' R2']]"
+  },
+  {
+    "corners": "LUB-RDB",
+    "notation": "IS",
+    "alg": "[R D : [U, R D R']]"
+  },
+  {
+    "corners": "LUB-RFD",
+    "notation": "IT",
+    "alg": "[D' R U : [U, R' D R]]"
+  },
+  {
+    "corners": "LUB-DRF",
+    "notation": "IV",
+    "alg": "[U2 x' : [D', R U' R']]"
+  },
+  {
+    "corners": "LUB-DBR",
+    "notation": "IW",
+    "alg": "[D R : [U, R D' R']]"
+  },
+  {
+    "corners": "LUB-DLB",
+    "notation": "IX",
+    "alg": "[R : [U, R D' R']]"
+  },
+  {
+    "corners": "LFU-UBL",
+    "notation": "JA",
+    "alg": "[F: [U2, R' D' R]]"
+  },
+  {
+    "corners": "LFU-URB",
+    "notation": "JB",
+    "alg": "[R': [R' D' R, U']]"
+  },
+  {
+    "corners": "LFU-FDR",
+    "notation": "JG",
+    "alg": "[z : [R U R', D]]"
+  },
+  {
+    "corners": "LFU-FLD",
+    "notation": "JH",
+    "alg": "[D R' U' : [R U R', D']]"
+  },
+  {
+    "corners": "LFU-LUB",
+    "notation": "JI",
+    "alg": "[z: [U, R' D' R]]"
+  },
+  {
+    "corners": "LFU-LDF",
+    "notation": "JK",
+    "alg": "[z: [U', R' D' R]]"
+  },
+  {
+    "corners": "LFU-LBD",
+    "notation": "JL",
+    "alg": "[z : [U2, R' D' R]]"
+  },
+  {
+    "corners": "LFU-BUR",
+    "notation": "JM",
+    "alg": "[z : [R U R', D']]"
+  },
+  {
+    "corners": "LFU-BLU",
+    "notation": "JN",
+    "alg": "[x' : [D, R U' R']]"
+  },
+  {
+    "corners": "LFU-BDL",
+    "notation": "JO",
+    "alg": "[x' : [D, R U2 R']]"
+  },
+  {
+    "corners": "LFU-BRD",
+    "notation": "JP",
+    "alg": "[F : [R U R', D']]"
+  },
+  {
+    "corners": "LFU-DFL",
+    "notation": "JQ",
+    "alg": "[U' R' U : [D, R U' R']]"
+  },
+  {
+    "corners": "LFU-RBU",
+    "notation": "JR",
+    "alg": "[F' U : [U2, R' D R]]"
+  },
+  {
+    "corners": "LFU-RDB",
+    "notation": "JS",
+    "alg": "[R' U’ : [U2, R' D' R]]"
+  },
+  {
+    "corners": "LFU-RFD",
+    "notation": "JT",
+    "alg": "[R' U' : [R U R', D']]"
+  },
+  {
+    "corners": "LFU-DRF",
+    "notation": "JV",
+    "alg": "[R U' R' : [U2, R' D' R]]"
+  },
+  {
+    "corners": "LFU-DBR",
+    "notation": "JW",
+    "alg": "[z: [D2, R U R']"
+  },
+  {
+    "corners": "LFU-DLB",
+    "notation": "JX",
+    "alg": "[R2 D2 : [D, R U' R']]"
+  },
+  {
+    "corners": "LDF-UBL",
+    "notation": "KA",
+    "alg": "[R' D R, U2]"
+  },
+  {
+    "corners": "LDF-URB",
+    "notation": "KB",
+    "alg": "[R' D R, U]"
+  },
+  {
+    "corners": "LDF-ULF",
+    "notation": "KD",
+    "alg": "[R' D R, U']"
+  },
+  {
+    "corners": "LDF-FUL",
+    "notation": "KE",
+    "alg": "D R' F2 R D' R' D F2 D' R"
+  },
+  {
+    "corners": "LDF-FDR",
+    "notation": "KG",
+    "alg": "[U : [R U' R', D]]"
+  },
+  {
+    "corners": "LDF-LUB",
+    "notation": "KI",
+    "alg": "[U R': [U', R' D R]]"
+  },
+  {
+    "corners": "LDF-LFU",
+    "notation": "KJ",
+    "alg": "[R' U': [D, R U R']]"
+  },
+  {
+    "corners": "LDF-LBD",
+    "notation": "KL",
+    "alg": "[z' : [D', R U' R']]"
+  },
+  {
+    "corners": "LDF-BUR",
+    "notation": "KM",
+    "alg": "[R' U : [D, R U' R']]"
+  },
+  {
+    "corners": "LDF-BLU",
+    "notation": "KN",
+    "alg": "[Lw U' : [R D' R', U']]"
+  },
+  {
+    "corners": "LDF-BDL",
+    "notation": "KO",
+    "alg": "[UD : [D, R U' R']]"
+  },
+  {
+    "corners": "LDF-BRD",
+    "notation": "KP",
+    "alg": "[R' U' R : [U2, R' D R]]"
+  },
+  {
+    "corners": "LDF-RBU",
+    "notation": "KR",
+    "alg": "[U R U : [U2, R' D R]]"
+  },
+  {
+    "corners": "LDF-RDB",
+    "notation": "KS",
+    "alg": "[UD : [D2, R U' R']]"
+  },
+  {
+    "corners": "LDF-RFD",
+    "notation": "KT",
+    "alg": "[U R' D : [D2, R U' R']]"
+  },
+  {
+    "corners": "LDF-DRF",
+    "notation": "KV",
+    "alg": "[z R' D R : [R' D2 R, U']]"
+  },
+  {
+    "corners": "LDF-DBR",
+    "notation": "KW",
+    "alg": "[U R : [R U' R', D]]"
+  },
+  {
+    "corners": "LDF-DLB",
+    "notation": "KX",
+    "alg": "[F' [R U' R', D2]]"
+  },
+  {
+    "corners": "LBD-UBL",
+    "notation": "LA",
+    "alg": "[U': [R D' R', U2]]"
+  },
+  {
+    "corners": "LBD-URB",
+    "notation": "LB",
+    "alg": "[U', R D' R']"
+  },
+  {
+    "corners": "LBD-ULF",
+    "notation": "LD",
+    "alg": "[U': [R D' R', U']]"
+  },
+  {
+    "corners": "LBD-FUL",
+    "notation": "LE",
+    "alg": "[Lw' : [R' D R, U2]]"
+  },
+  {
+    "corners": "LBD-FDR",
+    "notation": "LG",
+    "alg": "[Lw' U: [R U' R', D]]"
+  },
+  {
+    "corners": "LBD-FLD",
+    "notation": "LH",
+    "alg": "[D2 : [D', R U R']]"
+  },
+  {
+    "corners": "LBD-LUB",
+    "notation": "LI",
+    "alg": "[z U: [R' D' R, U]]"
+  },
+  {
+    "corners": "LBD-LFU",
+    "notation": "LJ",
+    "alg": "[z: [R' D' R, U2]]"
+  },
+  {
+    "corners": "LBD-LDF",
+    "notation": "LK",
+    "alg": "[z': [R U' R', D']]"
+  },
+  {
+    "corners": "LBD-BUR",
+    "notation": "LM",
+    "alg": "[R, U' L U]"
+  },
+  {
+    "corners": "LBD-BLU",
+    "notation": "LN",
+    "alg": "[U2 R : [U, R D' R']]"
+  },
+  {
+    "corners": "LBD-BRD",
+    "notation": "LP",
+    "alg": "[D' : [R U R', D']]"
+  },
+  {
+    "corners": "LBD-DFL",
+    "notation": "LQ",
+    "alg": "[R D R' D : [D2, R U R']]"
+  },
+  {
+    "corners": "LBD-RBU",
+    "notation": "LR",
+    "alg": "[U R : [U2, R D' R']]"
+  },
+  {
+    "corners": "LBD-RDB",
+    "notation": "LS",
+    "alg": "[R D' : [D2, R' U' R]]"
+  },
+  {
+    "corners": "LBD-RFD",
+    "notation": "LT",
+    "alg": "[R U R', D2]"
+  },
+  {
+    "corners": "LBD-DRF",
+    "notation": "LV",
+    "alg": "[D2 R : [U', R D' R']]"
+  },
+  {
+    "corners": "LBD-DBR",
+    "notation": "LW",
+    "alg": "[R D' R’ : [U, R’ D R]]"
+  },
+  {
+    "corners": "BUR-UBL",
+    "notation": "MA",
+    "alg": "[R' D': [U2, R' D R]]"
+  },
+  {
+    "corners": "BUR-ULF",
+    "notation": "MD",
+    "alg": "[U' R: [R D R', U]]"
+  },
+  {
+    "corners": "BUR-FUL",
+    "notation": "ME",
+    "alg": "[R D'U: [R' D' R, U2]]"
+  },
+  {
+    "corners": "BUR-FDR",
+    "notation": "MG",
+    "alg": "[D' R' U: [R U' R', D]]"
+  },
+  {
+    "corners": "BUR-FLD",
+    "notation": "MH",
+    "alg": "[z: [D', R U' R']]"
+  },
+  {
+    "corners": "BUR-LUB",
+    "notation": "MI",
+    "alg": "[x: [R', U' L U]]"
+  },
+  {
+    "corners": "BUR-LFU",
+    "notation": "MJ",
+    "alg": "[z: [D', R U R']]"
+  },
+  {
+    "corners": "BUR-LDF",
+    "notation": "MK",
+    "alg": "[R' U: [R U' R', D]]"
+  },
+  {
+    "corners": "BUR-LBD",
+    "notation": "ML",
+    "alg": "[U' L U, R]"
+  },
+  {
+    "corners": "BUR-BLU",
+    "notation": "MN",
+    "alg": "[U' L' U, R]"
+  },
+  {
+    "corners": "BUR-BDL",
+    "notation": "MO",
+    "alg": "[R' U : [R U' R', D2]]"
+  },
+  {
+    "corners": "BUR-BRD",
+    "notation": "MP",
+    "alg": "[R U' : [D, R' U R]]"
+  },
+  {
+    "corners": "BUR-DFL",
+    "notation": "MQ",
+    "alg": "[UD R' U' : [D', R U R']]"
+  },
+  {
+    "corners": "BUR-RDB",
+    "notation": "MS",
+    "alg": "[U' R U: [R' U' R, D]]"
+  },
+  {
+    "corners": "BUR-RFD",
+    "notation": "MT",
+    "alg": "[R D: [R D' R', U’]]"
+  },
+  {
+    "corners": "BUR-DRF",
+    "notation": "MV",
+    "alg": "[U R' U' : [D', R U R’]]"
+  },
+  {
+    "corners": "BUR-DBR",
+    "notation": "MW",
+    "alg": "[D R U' : [D', R' U R]]"
+  },
+  {
+    "corners": "BUR-DLB",
+    "notation": "MX",
+    "alg": "[R U' : [D', R' U R]]"
+  },
+  {
+    "corners": "BLU-URB",
+    "notation": "NB",
+    "alg": "[R': [R' D' R, U2]]"
+  },
+  {
+    "corners": "BLU-ULF",
+    "notation": "ND",
+    "alg": "[U' R': [U', R' D' R]]"
+  },
+  {
+    "corners": "BLU-FUL",
+    "notation": "NE",
+    "alg": "[R U R' D': [U2, R' D R]]"
+  },
+  {
+    "corners": "BLU-FDR",
+    "notation": "NG",
+    "alg": "[Lw D': [U', R' D R]]"
+  },
+  {
+    "corners": "BLU-FLD",
+    "notation": "NH",
+    "alg": "[D x': [R U' R', D']]"
+  },
+  {
+    "corners": "BLU-LFU",
+    "notation": "NJ",
+    "alg": "[x': [R U' R', D]]"
+  },
+  {
+    "corners": "BLU-LDF",
+    "notation": "NK",
+    "alg": "[Lw U': [U', R D' R']]"
+  },
+  {
+    "corners": "BLU-LBD",
+    "notation": "NL",
+    "alg": "[U2 R: [R D' R', U]]"
+  },
+  {
+    "corners": "BLU-BUR",
+    "notation": "NM",
+    "alg": "[R, U' L' U]"
+  },
+  {
+    "corners": "BLU-BDL",
+    "notation": "NO",
+    "alg": "[U' R' U': [R D' R', U']"
+  },
+  {
+    "corners": "BLU-BRD",
+    "notation": "NP",
+    "alg": "[R2 U : [U2, R D R']]"
+  },
+  {
+    "corners": "BLU-DFL",
+    "notation": "NQ",
+    "alg": "[U' R' : [U', R' D R]]"
+  },
+  {
+    "corners": "BLU-RBU",
+    "notation": "NR",
+    "alg": "[U R: [U2, R D R']]"
+  },
+  {
+    "corners": "BLU-RDB",
+    "notation": "NS",
+    "alg": "[R' U: [R' D' R. U]]"
+  },
+  {
+    "corners": "BLU-RFD",
+    "notation": "NT",
+    "alg": "[x': [R U' R', D']]"
+  },
+  {
+    "corners": "BLU-DRF",
+    "notation": "NV",
+    "alg": "[U'D' R' : [U', R' D R]]"
+  },
+  {
+    "corners": "BLU-DBR",
+    "notation": "NW",
+    "alg": "[R', [U' L' U, R2]]"
+  },
+  {
+    "corners": "BLU-DLB",
+    "notation": "NX",
+    "alg": "[U'D R’ : [U', R’ D R]]"
+  },
+  {
+    "corners": "BDL-UBL",
+    "notation": "OA",
+    "alg": "[R' D2 R, U2]"
+  },
+  {
+    "corners": "BDL-URB",
+    "notation": "OB",
+    "alg": "[R' D2 R, U]"
+  },
+  {
+    "corners": "BDL-ULF",
+    "notation": "OD",
+    "alg": "[R' D2 R, U']"
+  },
+  {
+    "corners": "BDL-FUL",
+    "notation": "OE",
+    "alg": "D R' D F2 D' R D R' F2 R D2"
+  },
+  {
+    "corners": "BDL-FDR",
+    "notation": "OG",
+    "alg": "[U: [R U' R', D2]]"
+  },
+  {
+    "corners": "BDL-FLD",
+    "notation": "OH",
+    "alg": "[D' R D': [R' U' R, D2]]"
+  },
+  {
+    "corners": "BDL-LUB",
+    "notation": "OI",
+    "alg": "[U R': [U', R' D2 R]"
+  },
+  {
+    "corners": "BDL-LFU",
+    "notation": "OJ",
+    "alg": "[x': [R U2 R', D]]"
+  },
+  {
+    "corners": "BDL-LDF",
+    "notation": "OK",
+    "alg": "[UD: [R U' R', D]]"
+  },
+  {
+    "corners": "BDL-BUR",
+    "notation": "OM",
+    "alg": "[R' U: [D2, R U' R']]"
+  },
+  {
+    "corners": "BDL-BLU",
+    "notation": "ON",
+    "alg": "[U' R' U': [R D' R', U']"
+  },
+  {
+    "corners": "BDL-BRD",
+    "notation": "OP",
+    "alg": "[U' : [U' L U, R']]"
+  },
+  {
+    "corners": "BDL-DFL",
+    "notation": "OQ",
+    "alg": "[x' : [R U2 R', D2]]"
+  },
+  {
+    "corners": "BDL-RBU",
+    "notation": "OR",
+    "alg": "[U' R' U’: [R D' R', U2]]"
+  },
+  {
+    "corners": "BDL-RDB",
+    "notation": "OS",
+    "alg": "[UD': [R U' R', D']]"
+  },
+  {
+    "corners": "BDL-RFD",
+    "notation": "OT",
+    "alg": "[x': [R U2 R', D']]"
+  },
+  {
+    "corners": "BDL-DRF",
+    "notation": "OV",
+    "alg": "[U'D' R’ : [U, R’ D R]]"
+  },
+  {
+    "corners": "BDL-DBR",
+    "notation": "OW",
+    "alg": "[U R : [D2, R U' R']]"
+  },
+  {
+    "corners": "BRD-UBL",
+    "notation": "PA",
+    "alg": "[D U': [R D' R', U2]]"
+  },
+  {
+    "corners": "BRD-URB",
+    "notation": "PB",
+    "alg": "[D: [U', R' D' R]]"
+  },
+  {
+    "corners": "BRD-ULF",
+    "notation": "PD",
+    "alg": "[D': [R' D' R, U']]"
+  },
+  {
+    "corners": "BRD-FUL",
+    "notation": "PE",
+    "alg": "[R U: [R' D' R, U2]]"
+  },
+  {
+    "corners": "BRD-FDR",
+    "notation": "PG",
+    "alg": "[D R D: [R' U' R, D2]]"
+  },
+  {
+    "corners": "BRD-FLD",
+    "notation": "PH",
+    "alg": "[D: [R U R', D2]]"
+  },
+  {
+    "corners": "BRD-LUB",
+    "notation": "PI",
+    "alg": "[R U: [R' D' R, U]]"
+  },
+  {
+    "corners": "BRD-LFU",
+    "notation": "PJ",
+    "alg": "[F: [D', R U R']]"
+  },
+  {
+    "corners": "BRD-LDF",
+    "notation": "PK",
+    "alg": "[R' U' R: [R' D R, U2]]"
+  },
+  {
+    "corners": "BRD-LBD",
+    "notation": "PL",
+    "alg": "[D': [D', R U R']]"
+  },
+  {
+    "corners": "BRD-BUR",
+    "notation": "PM",
+    "alg": "[R U': [R' U R, D]]"
+  },
+  {
+    "corners": "BRD-BLU",
+    "notation": "PN",
+    "alg": "[R2 U: [R D R', U2]]"
+  },
+  {
+    "corners": "BRD-BDL",
+    "notation": "PO",
+    "alg": "[U': [R', U' L U]]"
+  },
+  {
+    "corners": "BRD-DFL",
+    "notation": "PQ",
+    "alg": "[D' R : [U', R D' R']]"
+  },
+  {
+    "corners": "BRD-RBU",
+    "notation": "PR",
+    "alg": "[UD R: [U2, R D' R']]"
+  },
+  {
+    "corners": "BRD-RFD",
+    "notation": "PT",
+    "alg": "[R U R', D']"
+  },
+  {
+    "corners": "BRD-DRF",
+    "notation": "PV",
+    "alg": "[D' R D : [R' D' R, U]]"
+  },
+  {
+    "corners": "BRD-DLB",
+    "notation": "PX",
+    "alg": "[R U'D : [D2, R' U R]]"
+  },
+  {
+    "corners": "DFL-UBL",
+    "notation": "QA",
+    "alg": "[R F' R' U': [R D R', U2]]"
+  },
+  {
+    "corners": "DFL-URB",
+    "notation": "QB",
+    "alg": "[x': [D2, R U R']]"
+  },
+  {
+    "corners": "DFL-ULF",
+    "notation": "QD",
+    "alg": "[U' x': [R U R', D2]]"
+  },
+  {
+    "corners": "DFL-FUL",
+    "notation": "QE",
+    "alg": "[R UD: [R' D' R, U2]]"
+  },
+  {
+    "corners": "DFL-FDR",
+    "notation": "QG",
+    "alg": "U R U' F2 U R' U' R F2 R'"
+  },
+  {
+    "corners": "DFL-LUB",
+    "notation": "QI",
+    "alg": "[R: [R D2 R', U]]"
+  },
+  {
+    "corners": "DFL-LFU",
+    "notation": "QJ",
+    "alg": "[U' R' U: [R U' R', D]]"
+  },
+  {
+    "corners": "DFL-LBD",
+    "notation": "QL",
+    "alg": "[R D R' D: [R U R', D2]]"
+  },
+  {
+    "corners": "DFL-BUR",
+    "notation": "QM",
+    "alg": "[UD R' U': [R U R', D']]"
+  },
+  {
+    "corners": "DFL-BLU",
+    "notation": "QN",
+    "alg": "[U' R': [R' D R, U']]"
+  },
+  {
+    "corners": "DFL-BDL",
+    "notation": "QO",
+    "alg": "[x': [D2, R U2 R']]"
+  },
+  {
+    "corners": "DFL-BRD",
+    "notation": "QP",
+    "alg": "[D' R: [R D' R', U']]"
+  },
+  {
+    "corners": "DFL-RBU",
+    "notation": "QR",
+    "alg": "[U' R': [R' D R, U2]]"
+  },
+  {
+    "corners": "DFL-RDB",
+    "notation": "QS",
+    "alg": "[U' R': [R' D R, U]]"
+  },
+  {
+    "corners": "DFL-RFD",
+    "notation": "QT",
+    "alg": "[R D: [U, R' D' R]]"
+  },
+  {
+    "corners": "DFL-DRF",
+    "notation": "QV",
+    "alg": "[U' R' F' : [D', R U' R']]"
+  },
+  {
+    "corners": "DFL-DBR",
+    "notation": "QW",
+    "alg": "R2UD"
+  },
+  {
+    "corners": "DFL-DLB",
+    "notation": "QX",
+    "alg": "[x U : [U2, R' D R]]"
+  },
+  {
+    "corners": "RBU-UBL",
+    "notation": "RA",
+    "alg": "[R D R': [R' D2 R, U2]]"
+  },
+  {
+    "corners": "RBU-ULF",
+    "notation": "RD",
+    "alg": "[U' R': [U2, R' D' R]]"
+  },
+  {
+    "corners": "RBU-FUL",
+    "notation": "RE",
+    "alg": "[R': [R2 D' R2' D R2, U']]"
+  },
+  {
+    "corners": "RBU-FDR",
+    "notation": "RG",
+    "alg": "[U' R' U: [R D R', U2]]"
+  },
+  {
+    "corners": "RBU-FLD",
+    "notation": "RH",
+    "alg": "[F' U: [R' D' R, U2]]"
+  },
+  {
+    "corners": "RBU-LUB",
+    "notation": "RI",
+    "alg": "[R: [R2' D R2 D' R2', U]]"
+  },
+  {
+    "corners": "RBU-LFU",
+    "notation": "RJ",
+    "alg": "[F' U: [R' D R, U2]]"
+  },
+  {
+    "corners": "RBU-LDF",
+    "notation": "RK",
+    "alg": "[U R U: [R' D R, U2]]"
+  },
+  {
+    "corners": "RBU-LBD",
+    "notation": "RL",
+    "alg": "[U R: [R D' R', U2]]"
+  },
+  {
+    "corners": "RBU-BLU",
+    "notation": "RN",
+    "alg": "[U R : [R D R', U2]]"
+  },
+  {
+    "corners": "RBU-BDL",
+    "notation": "RO",
+    "alg": "[U' R' U’ : [U2, R D' R']]"
+  },
+  {
+    "corners": "RBU-BRD",
+    "notation": "RP",
+    "alg": "[UD R : [R D' R', U2]]"
+  },
+  {
+    "corners": "RBU-DFL",
+    "notation": "RQ",
+    "alg": "[U' R' : [U2, R' D R]]"
+  },
+  {
+    "corners": "RBU-RDB",
+    "notation": "RS",
+    "alg": "[U R U' : [U2, R' D' R]]"
+  },
+  {
+    "corners": "RBU-RFD",
+    "notation": "RT",
+    "alg": "R2UD"
+  },
+  {
+    "corners": "RBU-DRF",
+    "notation": "RV",
+    "alg": "U R' F2 R D' R' D F2 D' R DU'"
+  },
+  {
+    "corners": "RBU-DBR",
+    "notation": "RW",
+    "alg": "[F' : [R D R', U2]]"
+  },
+  {
+    "corners": "RBU-DLB",
+    "notation": "RX",
+    "alg": "[U'D R' : [U2, R' D R]]"
+  },
+  {
+    "corners": "RDB-UBL",
+    "notation": "SA",
+    "alg": "[U': [R D R', U2]]"
+  },
+  {
+    "corners": "RDB-URB",
+    "notation": "SB",
+    "alg": "[U', R D R']"
+  },
+  {
+    "corners": "RDB-ULF",
+    "notation": "SD",
+    "alg": "[U': [R D R', U']]"
+  },
+  {
+    "corners": "RDB-FUL",
+    "notation": "SE",
+    "alg": "[Lw' U': [R D R', U2]]"
+  },
+  {
+    "corners": "RDB-FDR",
+    "notation": "SG",
+    "alg": "[U: [R U' R', D']]"
+  },
+  {
+    "corners": "RDB-FLD",
+    "notation": "SH",
+    "alg": "[R D: [D, R' U' R]]"
+  },
+  {
+    "corners": "RDB-LUB",
+    "notation": "SI",
+    "alg": "[R D: [R D R', U]]"
+  },
+  {
+    "corners": "RDB-LFU",
+    "notation": "SJ",
+    "alg": "[R' U’: [R' D' R, U2]]"
+  },
+  {
+    "corners": "RDB-LDF",
+    "notation": "SK",
+    "alg": "[UD: [R U' R', D2]]"
+  },
+  {
+    "corners": "RDB-LBD",
+    "notation": "SL",
+    "alg": "[R D': [R' U' R, D2]]"
+  },
+  {
+    "corners": "RDB-BUR",
+    "notation": "SM",
+    "alg": "[U' R U : [D, R' U' R]]"
+  },
+  {
+    "corners": "RDB-BLU",
+    "notation": "SN",
+    "alg": "[R' U: [R' D' R. U]]"
+  },
+  {
+    "corners": "RDB-BDL",
+    "notation": "SO",
+    "alg": "[UD' : [D', R U' R']]"
+  },
+  {
+    "corners": "RDB-DFL",
+    "notation": "SQ",
+    "alg": "[U' R' : [U, R' D R]]"
+  },
+  {
+    "corners": "RDB-RBU",
+    "notation": "SR",
+    "alg": "[U R U': [R' D' R, U2]]"
+  },
+  {
+    "corners": "RDB-RFD",
+    "notation": "ST",
+    "alg": "[R D’ : [U, R’ D R]]"
+  },
+  {
+    "corners": "RDB-DRF",
+    "notation": "SV",
+    "alg": "[DU R: [R U' R', D2]]"
+  },
+  {
+    "corners": "RDB-DLB",
+    "notation": "SX",
+    "alg": "[R2 D2 : [D, R U R']]"
+  },
+  {
+    "corners": "RFD-UBL",
+    "notation": "TA",
+    "alg": "[R' D' R, U2]"
+  },
+  {
+    "corners": "RFD-URB",
+    "notation": "TB",
+    "alg": "[R' D' R, U]"
+  },
+  {
+    "corners": "RFD-ULF",
+    "notation": "TD",
+    "alg": "[R' D' R, U']"
+  },
+  {
+    "corners": "RFD-FUL",
+    "notation": "TE",
+    "alg": "[Lw': [R' D' R, U2]]"
+  },
+  {
+    "corners": "RFD-FLD",
+    "notation": "TH",
+    "alg": "[D, R U R']"
+  },
+  {
+    "corners": "RFD-LUB",
+    "notation": "TI",
+    "alg": "[D' R U: [R' D R, U]]"
+  },
+  {
+    "corners": "RFD-LFU",
+    "notation": "TJ",
+    "alg": "[R' U': [D', R U R']]"
+  },
+  {
+    "corners": "RFD-LDF",
+    "notation": "TK",
+    "alg": "[U R' D: [R U' R', D2]]"
+  },
+  {
+    "corners": "RFD-LBD",
+    "notation": "TL",
+    "alg": "[D2, R U R']"
+  },
+  {
+    "corners": "RFD-BUR",
+    "notation": "TM",
+    "alg": "[R D : [U’, R D' R']]"
+  },
+  {
+    "corners": "RFD-BLU",
+    "notation": "TN",
+    "alg": "[x' : [D', R U' R']]"
+  },
+  {
+    "corners": "RFD-BDL",
+    "notation": "TO",
+    "alg": "[x' : [D', R U2 R']]"
+  },
+  {
+    "corners": "RFD-BRD",
+    "notation": "TP",
+    "alg": "[D', R U R']"
+  },
+  {
+    "corners": "RFD-DFL",
+    "notation": "TQ",
+    "alg": "[R D : [R' D' R, U]]"
+  },
+  {
+    "corners": "RFD-RBU",
+    "notation": "TR",
+    "alg": "[U' R' U'D: [R D' R', U2]]"
+  },
+  {
+    "corners": "RFD-RDB",
+    "notation": "TS",
+    "alg": "[R D’: [R’ D R, U]]"
+  },
+  {
+    "corners": "RFD-DBR",
+    "notation": "TW",
+    "alg": "[R : [R' D R U' R D' R', U]]"
+  },
+  {
+    "corners": "RFD-DLB",
+    "notation": "TX",
+    "alg": "[R : [U', R D' R']]"
+  },
+  {
+    "corners": "DRF-UBL",
+    "notation": "VA",
+    "alg": "[D R D' R': [R' D R, U2]]"
+  },
+  {
+    "corners": "DRF-URB",
+    "notation": "VB",
+    "alg": "[R' D R U' R D' R', U]"
+  },
+  {
+    "corners": "DRF-ULF",
+    "notation": "VD",
+    "alg": "[R' D R U' R D' R', U']"
+  },
+  {
+    "corners": "DRF-FUL",
+    "notation": "VE",
+    "alg": "[D' R UD: [R' D' R, U2]]"
+  },
+  {
+    "corners": "DRF-FLD",
+    "notation": "VH",
+    "alg": "[R U' R': [U2, R' D R]]"
+  },
+  {
+    "corners": "DRF-LUB",
+    "notation": "VI",
+    "alg": "[U2 x': [R U' R', D']]"
+  },
+  {
+    "corners": "DRF-LFU",
+    "notation": "VJ",
+    "alg": "[R U' R': [R' D' R, U2]]"
+  },
+  {
+    "corners": "DRF-LDF",
+    "notation": "VK",
+    "alg": "[z R' D R: [U', R' D2 R]]"
+  },
+  {
+    "corners": "DRF-LBD",
+    "notation": "VL",
+    "alg": "[D2 R: [R D' R', U']]"
+  },
+  {
+    "corners": "DRF-BUR",
+    "notation": "VM",
+    "alg": "[U R' U': [R U R’, D']]"
+  },
+  {
+    "corners": "DRF-BLU",
+    "notation": "VN",
+    "alg": "[U'D' R': [R' D R, U']]"
+  },
+  {
+    "corners": "DRF-BDL",
+    "notation": "VO",
+    "alg": "[U'D' R’: [R’ D R, U]]"
+  },
+  {
+    "corners": "DRF-BRD",
+    "notation": "VP",
+    "alg": "[D' R D: [U, R' D' R]]"
+  },
+  {
+    "corners": "DRF-DFL",
+    "notation": "VQ",
+    "alg": "[U' R' F': [R U' R', D']]"
+  },
+  {
+    "corners": "DRF-RBU",
+    "notation": "VR",
+    "alg": "U R' F2 R D' R' D F2 D' R DU'"
+  },
+  {
+    "corners": "DRF-RDB",
+    "notation": "VS",
+    "alg": "[D' R: [R' U R U', F2]]"
+  },
+  {
+    "corners": "DRF-DBR",
+    "notation": "VW",
+    "alg": "[F' R U' : [U2, R' D' R]]"
+  },
+  {
+    "corners": "DRF-DLB",
+    "notation": "VX",
+    "alg": "[R U' R' U : [U2, R D' R']]"
+  },
+  {
+    "corners": "DBR-UBL",
+    "notation": "WA",
+    "alg": "[R D' R': [R' D R, U2]]"
+  },
+  {
+    "corners": "DBR-URB",
+    "notation": "WB",
+    "alg": "[U R D' R': [U', R' D R]]"
+  },
+  {
+    "corners": "DBR-ULF",
+    "notation": "WD",
+    "alg": "[R D' R': [R' D R, U']]"
+  },
+  {
+    "corners": "DBR-FUL",
+    "notation": "WE",
+    "alg": "[D R: [R D' R', U2]]"
+  },
+  {
+    "corners": "DBR-FDR",
+    "notation": "WG",
+    "alg": "[U R D': [U', R' D R]]"
+  },
+  {
+    "corners": "DBR-FLD",
+    "notation": "WH",
+    "alg": "[D R: [R D' R', U’]]"
+  },
+  {
+    "corners": "DBR-LUB",
+    "notation": "WI",
+    "alg": "[D R: [R D' R', U]]"
+  },
+  {
+    "corners": "DBR-LFU",
+    "notation": "WJ",
+    "alg": "[z: [D2, R U R']"
+  },
+  {
+    "corners": "DBR-LDF",
+    "notation": "WK",
+    "alg": "[U R: [D, R U' R']]"
+  },
+  {
+    "corners": "DBR-LBD",
+    "notation": "WL",
+    "alg": "[R D' R’: [R’ D R, U]]"
+  },
+  {
+    "corners": "DBR-BUR",
+    "notation": "WM",
+    "alg": "[D R U': [R' U R, D']]"
+  },
+  {
+    "corners": "DBR-BLU",
+    "notation": "WN",
+    "alg": "[R', [U' L' U, R2]]"
+  },
+  {
+    "corners": "DBR-BDL",
+    "notation": "WO",
+    "alg": "[U R: [R U' R', D2]]"
+  },
+  {
+    "corners": "DBR-DFL",
+    "notation": "WQ",
+    "alg": "R2UD"
+  },
+  {
+    "corners": "DBR-RBU",
+    "notation": "WR",
+    "alg": "[F': [U2, R D R']]"
+  },
+  {
+    "corners": "DBR-RFD",
+    "notation": "WT",
+    "alg": "[R: [U, R' D R U' R D' R']]"
+  },
+  {
+    "corners": "DBR-DRF",
+    "notation": "WV",
+    "alg": "[F' R U': [R' D' R, U2]]"
+  },
+  {
+    "corners": "DBR-DLB",
+    "notation": "WX",
+    "alg": "[z : [D2, R U2 R']]"
+  },
+  {
+    "corners": "DLB-UBL",
+    "notation": "XA",
+    "alg": "[R' z R': [R' D R, U2]]"
+  },
+  {
+    "corners": "DLB-URB",
+    "notation": "XB",
+    "alg": "[x: [R' U' R, D2]]"
+  },
+  {
+    "corners": "DLB-ULF",
+    "notation": "XD",
+    "alg": "[R' D' R: [R U' R', D]]"
+  },
+  {
+    "corners": "DLB-FUL",
+    "notation": "XE",
+    "alg": "[R: [R D' R', U2]]"
+  },
+  {
+    "corners": "DLB-FDR",
+    "notation": "XG",
+    "alg": "[z: [R U2 R', D]]"
+  },
+  {
+    "corners": "DLB-FLD",
+    "notation": "XH",
+    "alg": "[z' U': [R U R', D']]"
+  },
+  {
+    "corners": "DLB-LUB",
+    "notation": "XI",
+    "alg": "[R: [R D' R', U]]"
+  },
+  {
+    "corners": "DLB-LFU",
+    "notation": "XJ",
+    "alg": "[R2 D2: [R U' R', D]]"
+  },
+  {
+    "corners": "DLB-LDF",
+    "notation": "XK",
+    "alg": "[F' [R U' R', D2]]"
+  },
+  {
+    "corners": "DLB-BUR",
+    "notation": "XM",
+    "alg": "[R U': [R' U R, D']]"
+  },
+  {
+    "corners": "DLB-BLU",
+    "notation": "XN",
+    "alg": "[U'D R’: [R’ D R, U']]"
+  },
+  {
+    "corners": "DLB-BRD",
+    "notation": "XP",
+    "alg": "[R U'D: [R' U R, D2]]"
+  },
+  {
+    "corners": "DLB-DFL",
+    "notation": "XQ",
+    "alg": "[x U: [R' D R, U2]]"
+  },
+  {
+    "corners": "DLB-RBU",
+    "notation": "XR",
+    "alg": "[U'D R': [R' D R, U2]]"
+  },
+  {
+    "corners": "DLB-RDB",
+    "notation": "XS",
+    "alg": "[R2 D2: [R U R', D]]"
+  },
+  {
+    "corners": "DLB-RFD",
+    "notation": "XT",
+    "alg": "[R: [R D' R', U']]"
+  },
+  {
+    "corners": "DLB-DRF",
+    "notation": "XV",
+    "alg": "[R U' R' U: [R D' R', U2]]"
+  },
+  {
+    "corners": "DLB-DBR",
+    "notation": "XW",
+    "alg": "[z: [R U2 R', D2]]"
   }
 ]
