@@ -1,421 +1,361 @@
 corners,notation,alg
-UBL-URB,AB,"[R' D' U' : [R' D R, U']]"
-UBL-ULF,AD,"[R' D' U' : [R' D R, U']]"
-UBL-LUB,AI,"[R' D' U' : [R' D R, U']]"
-UBL-LFU,AJ,"[R' D' U' : [R' D R, U']]"
-UBL-LDF,AK,"[R' D' U' : [R' D R, U']]"
-UBL-LBD,AL,"[R' D' U' : [R' D R, U']]"
-UBL-FUL,AE,"[R' D' U' : [R' D R, U']]"
-UBL-FDR,AG,"[R' D' U' : [R' D R, U']]"
-UBL-FLD,AH,"[R' D' U' : [R' D R, U']]"
-UBL-RBU,AR,"[R D R': [R' D2 R, U2]]"
-UBL-RDB,AS,"[U': [R D R', U2]]"
-UBL-RFD,AT,"[R' D' R, U2]"
-UBL-BUR,AM,"[R' D': [U2, R' D R]]"
-UBL-BLU,AN,"[D R D' R': [R D' R', U2]]"
-UBL-BDL,AO,"[R' D2 R, U2]"
-UBL-BRD,AP,"[D U': [R D' R', U2]]"
-UBL-DFL,AQ,"[R F' R' U': [R D R', U2]]"
-UBL-DRF,AV,"[D R D' R': [R' D R, U2]]"
-UBL-DBR,AW,"[R D' R': [R' D R, U2]]"
-UBL-DLB,AX,"[R' z R': [R' D R, U2]]"
+UBL-ULF,AC,"[R' D' U' : [R' D R, U']]"
 URB-UBL,BA,"[Lw': [U, R' D2 R]]"
-URB-ULF,BD,"[Lw': [U, R' D2 R]]"
-URB-LUB,BI,"[R: [U, R D R']]"
-URB-LFU,BJ,"[R': [R' D' R, U']]"
-URB-LDF,BK,"[R' D R, U]"
-URB-LBD,BL,"[U', R D' R']"
-URB-FUL,BE,"[R: [U2, R D R']]"
-URB-FDR,BG,"[D': [R' D R, U]]"
-URB-FLD,BH,"[D: [R' D' R, U]]"
-URB-RBU,BR,"[R U2 R' D R U2 R' D': [R D' R', U]]"
-URB-RDB,BS,"[R' D2 R U' R' D2 R U: [R D' R', U']]"
-URB-RFD,BT,"[R U R' D R U' R' D': [R D' R', U]]"
-URB-BUR,BM,"[R' F R F' U' F R F' U: [R D' R', U']]"
-URB-BLU,BN,"[R': [R' D' R, U2]]"
-URB-BDL,BO,"[R' D2 R, U]"
-URB-BRD,BP,"[D: [U', R' D' R]]"
-URB-DFL,BQ,"[x': [D2, R U R']]"
-URB-DRF,BV,"[R' D R U' R D' R', U]"
-URB-DBR,BW,"[U R D' R': [U', R' D R]]"
-URB-DLB,BX,"[x: [R' U' R, D2]]"
-ULF-UBL,DA,"[R' D' R U2: [R' D R, U]]"
-ULF-URB,DB,"[R F' R2': [D , R U R']]"
-ULF-LUB,DI,"[U' R: [R D R', U2]]"
-ULF-LFU,DJ,"[z: [U, R' D' R]]"
-ULF-LDF,DK,"[R' D R, U']"
-ULF-LBD,DL,"[U': [R D' R', U']]"
-ULF-FUL,DE,"[R F' R2': [D , R U R']]"
-ULF-FDR,DG,"[D': [R' D R, U']]"
-ULF-FLD,DH,"[D': [R' D' R, U']]"
-ULF-RBU,DR,"[U' R': [U2, R' D' R]]"
-ULF-RDB,DS,"[U': [R D R', U']]"
-ULF-RFD,DT,"[R' D' R, U']"
-ULF-BUR,DM,"[U' R: [R D R', U]]"
-ULF-BLU,DN,"[U' R': [U', R' D' R]]"
-ULF-BDL,DO,"[R' D2 R, U']"
-ULF-BRD,DP,"[D': [R' D' R, U']]"
-ULF-DFL,DQ,"[U' x': [R U R', D2]]"
-ULF-DRF,DV,"[R' D R U' R D' R', U']"
-ULF-DBR,DW,"[R D' R': [R' D R, U']]"
-ULF-DLB,DX,"[R' D' R: [R U' R', D]]"
-LUB-UBL,IA,"[U' R: [R D R', U2]]"
-LUB-URB,IB,"[R: [U, R D R']]"
-LUB-ULF,ID,"[U' R: [R D R', U2]]"
-LUB-LFU,IJ,"[z: [U, R' D' R]]"
-LUB-LDF,IK,"[U R': [U', R' D R]]"
-LUB-LBD,IL,"[z U: [R' D' R, U]]"
-LUB-FUL,IE,"[Lw' U: [R D' R', U2]]"
-LUB-FDR,IG,"[R U R': [R' D' R, U']]"
-LUB-FLD,IH,"[R U: [R' D R, U]]"
-LUB-RBU,IR,"[R: [R2' D R2 D' R2', U]]"
-LUB-RDB,IS,"[R D: [R D R', U]]"
-LUB-RFD,IT,"[D' R U: [R' D R, U]]"
-LUB-BUR,IM,"[x: [R', U' L U]]"
-LUB-BLU,IN,"[x': [R U' R', D]]"
-LUB-BDL,IO,"[U R': [U', R' D2 R]"
-LUB-BRD,IP,"[R U: [R' D' R, U]]"
-LUB-DFL,IQ,"[R: [R D2 R', U]]"
-LUB-DRF,IV,"[U2 x': [R U' R', D']]"
-LUB-DBR,IW,"[D R: [R D' R', U]]"
-LUB-DLB,IX,"[R: [R D' R', U]]"
-LFU-UBL,JA,"[F: [U2, R' D' R]]"
-LFU-URB,JB,"[R': [R' D' R, U']]"
-LFU-ULF,JD,"[z: [U, R' D' R]]"
-LFU-LUB,JI,"[z: [U, R' D' R]]"
-LFU-LDF,JK,"[z: [U', R' D' R]]"
-LFU-LBD,JL,"[z: [R' D' R, U2]]"
-LFU-FUL,JE,"[R': [R' D' R, U']]"
-LFU-FDR,JG,"[z: [D, R U R']]"
-LFU-FLD,JH,"[D R' U': [D', R U R']]"
-LFU-RBU,JR,"[F' U: [R' D R, U2]]"
-LFU-RDB,JS,"[R' U': [R' D' R, U2]]"
-LFU-RFD,JT,"[R' U': [D', R U R']]"
-LFU-BUR,JM,"[z: [D', R U R']]"
-LFU-BLU,JN,"[x': [R U' R', D]]"
-LFU-BDL,JO,"[x': [R U2 R', D]]"
-LFU-BRD,JP,"[F: [D', R U R']]"
-LFU-DFL,JQ,"[U' R' U: [R U' R', D]]"
-LFU-DRF,JV,"[R U' R': [R' D' R, U2]]"
-LFU-DBR,JW,"[z: [D2, R U R']]"
-LFU-DLB,JX,"[R2 D2: [R U' R', D]]"
-LDF-UBL,KA,"[R' D R, U2]"
-LDF-URB,KB,"[R' D R, U]"
-LDF-ULF,KD,"[R' D R, U']"
-LDF-LUB,KI,"[U R': [U', R' D R]]"
-LDF-LFU,KJ,"[R' U': [D, R U R']]"
-LDF-LBD,KL,"[z': [R U' R', D']]"
-LDF-FUL,KE,"D R' F2 R D' R' D F2 D' R"
-LDF-FDR,KG,"[U: [D, R U' R']]"
-LDF-FLD,KH,"[D2: [R U R', D']]"
-LDF-RBU,KR,"[U R U: [R' D R, U2]]"
-LDF-RDB,KS,"[UD: [R U' R', D2]]"
-LDF-RFD,KT,"[U R' D: [R U' R', D2]]"
-LDF-BUR,KM,"[R' U: [R U' R', D]]"
-LDF-BLU,KN,"[Lw U': [U', R D' R']]"
-LDF-BDL,KO,"[UD: [R U' R', D]]"
-LDF-BRD,KP,"[R' U' R: [R' D R, U2]]"
-LDF-DFL,KQ,"[R D R' D: [R U R', D2]]"
-LDF-DRF,KV,"[z R' D R: [U', R' D2 R]]"
-LDF-DBR,KW,"[U R: [D, R U' R']]"
-LDF-DLB,KX,"[F': [R U' R', D2]]"
-LBD-UBL,LA,"[U': [R D' R', U2]]"
-LBD-URB,LB,"[U', R D' R']"
-LBD-ULF,LD,"[U': [R D' R', U']]"
-LBD-LUB,LI,"[z U: [R' D' R, U]]"
-LBD-LFU,LJ,"[z: [R' D' R, U2]]"
-LBD-LDF,LK,"[z': [R U' R', D']]"
-LBD-FUL,LE,"[Lw': [U2, R' D R]]"
-LBD-FDR,LG,"[U R U': [R D' R', U']]"
-LBD-FLD,LH,"[D2: [R U R', D']]"
-LBD-RBU,LR,"[U R: [R D' R', U2]]"
-LBD-RDB,LS,"[R D': [R' U' R, D2]]"
-LBD-RFD,LT,"[D2, R U R']"
-LBD-BUR,LM,"[U' L U, R]"
-LBD-BLU,LN,"[U2 R: [R D' R', U]]"
-LBD-BDL,LO,"[UD: [R U' R', D]]"
-LBD-BRD,LP,"[D': [D', R U R']]"
-LBD-DFL,LQ,"[R D R' D: [R U R', D2]]"
-LBD-DRF,LV,"[D2 R: [R D' R', U']]"
-LBD-DBR,LW,"[R D' R': [R' D R, U]]"
-LBD-DLB,LX,"[z: [R U2 R', D]]"
-FUL-UBL,EA,"[Lw': [U2, R' D2 R]]"
-FUL-URB,EB,"[R: [U2, R D R']]"
-FUL-ULF,ED,"[R F' R2': [D , R U R']]"
-FUL-LUB,EI,"[Lw' U: [R D' R', U2]]"
-FUL-LFU,EJ,"[R': [R' D' R, U']]"
-FUL-LDF,EK,"D R' F2 R D' R' D F2 D' R"
-FUL-LBD,EL,"[Lw': [U2, R' D R]]"
-FUL-FDR,EG,"D' R' D F2 D' R D R' F2 R"
-FUL-FLD,EH,"[R U: [R' D R, U2]]"
-FUL-RBU,ER,"[R': [R2 D' R2' D R2, U']]"
-FUL-RDB,ES,"[Lw' U': [R D R', U2]]"
-FUL-RFD,ET,"[Lw': [R' D' R, U2]]"
-FUL-BUR,EM,"[R D'U: [R' D' R, U2]]"
-FUL-BLU,EN,"[R U R' D': [U2, R' D R]]"
-FUL-BDL,EO,"D R' D F2 D' R D R' F2 R D2"
-FUL-BRD,EP,"[R U: [R' D' R, U2]]"
-FUL-DFL,EQ,"[R UD: [R' D' R, U2]]"
-FUL-DRF,EV,"[D' R UD: [R' D' R, U2]]"
-FUL-DBR,EW,"[D R: [R D' R', U2]]"
-FUL-DLB,EX,"[R: [R D' R', U2]]"
-FDR-UBL,GA,"[D': [R' D R, U2]]"
-FDR-URB,GB,"[D': [R' D R, U]]"
-FDR-ULF,GD,"[D': [R' D R, U']]"
-FDR-LUB,GI,"[R U R': [R' D' R, U']]"
-FDR-LFU,GJ,"[z: [D, R U R']]"
-FDR-LDF,GK,"[U: [D, R U' R']]"
-FDR-LBD,GL,"[U R U': [R D' R', U']]"
-FDR-FUL,GE,"D' R' D F2 D' R D R' F2 R"
-FDR-FLD,GH,"[z: [R U' R', D]]"
-FDR-RBU,GR,"[U' R' U: [R D R', U2]]"
-FDR-RDB,GS,"[U: [R U' R', D']]"
-FLD-RFD,HT,"[D, R U R']"
-FDR-BUR,GM,"[D' R' U: [R U' R', D]]"
-FDR-BLU,GN,"[Lw D': [U', R' D R]]"
-FDR-BDL,GO,"[U: [R U' R', D2]]"
-FDR-BRD,GP,"[D R D: [R' U' R, D2]]"
-FDR-DFL,GQ,"U R U' F2 U R' U' R F2 R'"
-FDR-DRF,GV,"[R U' R': [U2, R' D R]]"
-FDR-DBR,GW,"[U R D': [U', R' D R]]"
-FDR-DLB,GX,"[z: [R U2 R', D]]"
-FLD-UBL,HA,"[D' U': [R D' R', U2]]"
-FLD-URB,HB,"[D: [R' D' R, U]]"
-FLD-ULF,HD,"[D': [R' D' R, U']]"
-FLD-LUB,HI,"[R U: [R' D R, U]]"
-FLD-LFU,HJ,"[D R' U': [D', R U R']]"
-FLD-LDF,HK,"[D2: [R U R', D']]"
-FLD-LBD,HL,"[D2: [R U R', D']]"
-FLD-FUL,HE,"[R U: [R' D R, U2]]"
-FLD-FDR,HG,"[z: [R U' R', D]]"
-FLD-RBU,HR,"[F' U: [R' D' R, U2]]"
-FLD-RDB,HS,"[R D: [D, R' U' R]]"
-FLD-RFD,HT,"[D, R U R']"
-FLD-BUR,HM,"[z: [D', R U' R']]"
-FLD-BLU,HN,"[D x': [R U' R', D']]"
-FLD-BDL,HO,"[D' R D': [R' U' R, D2]]"
-FLD-BRD,HP,"[D: [R U R', D2]]"
-FLD-DFL,HQ,"[R U' R': [R' D' R, U2]]"
-FLD-DRF,HV,"[R U' R': [U2, R' D R]]"
-FLD-DBR,HW,"[D R: [R D' R', U']]"
-FLD-DLB,HX,"[z' U': [R U R', D']]"
-RBU-UBL,RA,"[R' U' R D' R' U R D: [R D' R', U']]"
-RBU-URB,RB,"[R U2 R' D R U2 R' D': [R D' R', U]]"
-RBU-ULF,RD,"[U' R': [U2, R' D' R]]"
-RBU-LUB,RI,"[R: [R2' D R2 D' R2', U]]"
-RBU-LFU,RJ,"[F' U: [R' D R, U2]]"
-RBU-LDF,RK,"[U R U: [R' D R, U2]]"
-RBU-LBD,RL,"[U R: [R D' R', U2]]"
-RBU-FUL,RE,"[R': [R2 D' R2' D R2, U']]"
-RBU-FDR,RG,"[U' R' U: [R D R', U2]]"
-RBU-FLD,RH,"[F' U: [R' D' R, U2]]"
-RBU-RDB,RS,"[U R U': [R' D' R, U2]]"
-RBU-RFD,RT,"[U'D' R': [R' D R, U']]"
-RBU-BUR,RM,"[U R: [U2, R D R']]"
-RBU-BLU,RN,"[R' U: [R' D' R. U]]"
-RBU-BDL,RO,"[U' R' U': [R D' R', U2]]"
-RBU-BRD,RP,"[UD R: [U2, R D' R']]"
-RBU-DFL,RQ,"[U' R': [R' D R, U2]]"
-RBU-DRF,RV,"U R' F2 R D' R' D F2 D' R DU'"
-RBU-DBR,RW,"[F': [U2, R D R']]"
-RBU-DLB,RX,"[U'D R': [R' D R, U2]]"
-RDB-UBL,SA,"[F U F' D F U' F' D': [R D' R', U2]]"
-RDB-URB,SB,"[R' D2 R U' R' D2 R U: [R D' R', U']]"
-RDB-ULF,SD,"[U': [R D R', U']]"
-RDB-LUB,SI,"[R D: [R D R', U]]"
-RDB-LFU,SJ,"[R' U': [R' D' R, U2]]"
-RDB-LDF,SK,"[UD: [R U' R', D2]]"
-RDB-LBD,SL,"[R D': [R' U' R, D2]]"
-RDB-FUL,SE,"[Lw' U': [R D R', U2]]"
-RDB-FDR,SG,"[U: [R U' R', D']]"
-RDB-FLD,SH,"[R D: [D, R' U' R]]"
-RDB-RBU,SR,"[U R U': [R' D' R, U2]]"
-RDB-RFD,ST,"[U' R' F': [R U' R', D']]"
-RDB-BUR,SM,"[U' R U: [R' U' R, D]]"
-RDB-BLU,SN,"[R' U: [R' D' R. U]]"
-RDB-BDL,SO,"[UD': [R U' R', D']]"
-RDB-BRD,SP,"[R2 D2: [R U R', D]]"
-RDB-DFL,SQ,"[U' R': [R' D R, U]]"
-RDB-DRF,SV,"[D' R: [R' U R U', F2]]"
-RDB-DBR,SW,"[R: [U, R' D R U' R D' R']]"
-RDB-DLB,SX,"[R2 D2: [R U' R', D]]"
-RFD-UBL,TA,"[L' U' L D' L' U L D: [R D' R', U2]]"
-RFD-URB,TB,"[R U R' D R U' R' D': [R D' R', U]]"
-RFD-ULF,TD,"[R' D' R, U']"
-RFD-LUB,TI,"[D' R U: [R' D R, U]]"
-RFD-LFU,TJ,"[R' U': [D', R U R']]"
-RFD-LDF,TK,"[U R' D: [R U' R', D2]]"
-RFD-LBD,TL,"[D2, R U R']"
-RFD-FUL,TE,"[Lw': [R' D' R, U2]]"
-RFD-FDR,TG,"[D, R U R']"
-RFD-FLD,TH,"[D, R U R']"
-RFD-RBU,TR,"[U'D' R': [R' D R, U']]"
-RFD-RDB,TS,"[U' R' F': [R U' R', D']]"
-RFD-BUR,TM,"[R D: [R D' R', U']]"
-RFD-BLU,TN,"[x': [R U' R', D']]"
-RFD-BDL,TO,"[x': [R U2 R', D']]"
-RFD-BRD,TP,"[R U R', D']"
-RFD-DFL,TQ,"[R D: [U, R' D' R]]"
-RFD-DRF,TV,"[U R' U': [R U R', D']]"
-RFD-DBR,TW,"[D R U': [R' U R, D']]"
-RFD-DLB,TX,"[R: [R D' R', U']]"
-BUR-UBL,MA,"[F R F' U F R' F' U': [R D' R', U2]]"
-BUR-URB,MB,"[R' F R F' U' F R F' U: [R D' R', U']]"
-BUR-ULF,MD,"[U' R: [R D R', U]]"
-BUR-LUB,MI,"[x: [R', U' L U]]"
-BUR-LFU,MJ,"[z: [D', R U R']]"
-BUR-LDF,MK,"[R' U: [R U' R', D]]"
-BUR-LBD,ML,"[U' L U, R]"
-BUR-FUL,ME,"[R D'U: [R' D' R, U2]]"
-BUR-FDR,MG,"[D' R' U: [R U' R', D]]"
-BUR-FLD,MH,"[z: [D', R U' R']]"
-BUR-RBU,MR,"[U R: [U2, R D R']]"
-BUR-RDB,MS,"[U' R U: [R' U' R, D]]"
-BUR-RFD,MT,"[R D: [R D' R', U']]"
-BUR-BLU,MN,"[R, U' L' U]"
-BUR-BDL,MO,"[R' U: [D2, R U' R']]"
-BUR-BRD,MP,"[R U': [R' U R, D]]"
-BUR-DFL,MQ,"[UD R' U': [R U R', D']]"
-BUR-DRF,MV,"[U R' U': [R U R', D']]"
-BUR-DBR,MW,"[D R U': [R' U R, D']]"
-BUR-DLB,MX,"[R U': [R' U R, D']]"
-BLU-UBL,NA,"[D R D' R': [R D' R', U2]]"
-BLU-URB,NB,"[R U R' U': [R D' R', U]]"
-BLU-ULF,ND,"[U' R': [U', R' D' R]]"
-BLU-LUB,NI,"[x': [R U' R', D]]"
-BLU-LFU,NJ,"[x': [R U' R', D]]"
-BLU-LDF,NK,"[Lw U': [U', R D' R']]"
-BLU-LBD,NL,"[U2 R: [R D' R', U]]"
-BLU-FUL,NE,"[R U R' D': [U2, R' D R]]"
-BLU-FDR,NG,"[Lw D': [U', R' D R]]"
-BLU-FLD,NH,"[D x': [R U' R', D']]"
-BLU-RBU,NR,"[R' U: [R' D' R. U]]"
-BLU-RDB,NS,"[R' U: [R' D' R. U]]"
-BLU-RFD,NT,"[x': [R U' R', D']]"
-BLU-BUR,NM,"[R, U' L' U]"
-BLU-BDL,NO,"[U' R' U': [R D' R', U']]"
-BLU-BRD,NP,"[R2 U: [R D R', U2]]"
-BLU-DFL,NQ,"[U' R': [R' D R, U']]"
-BLU-DRF,NV,"[U'D' R': [R' D R, U']]"
-BLU-DBR,NW,"[R', [U' L' U, R2]]"
-BLU-DLB,NX,"[U'D R': [R' D R, U']]"
-BDL-UBL,OA,"[R' U R U': [R D' R', U2]]"
-BDL-URB,OB,"[F' U F U': [R D' R', U]]"
-BDL-ULF,OD,"[R' D2 R, U']"
-BDL-LUB,OI,"[U R': [U', R' D2 R]"
-BDL-LFU,OJ,"[x': [R U2 R', D]]"
-BDL-LDF,OK,"[UD: [R U' R', D]]"
-BDL-LBD,OL,"[UD: [R U' R', D]]"
-BDL-FUL,OE,"D R' D F2 D' R D R' F2 R D2"
-BDL-FDR,OG,"[U: [R U' R', D2]]"
-BDL-FLD,OH,"[D' R D': [R' U' R, D2]]"
-BDL-RBU,OR,"[U' R' U': [R D' R', U2]]"
-BDL-RDB,OS,"[UD': [R U' R', D']]"
-BDL-RFD,OT,"[x': [R U2 R', D']]"
-BDL-BUR,OM,"[R' U: [D2, R U' R']]"
-BDL-BLU,ON,"[U' R' U': [R D' R', U']]"
-BDL-BRD,OP,"[U': [R', U' L U]]"
-BDL-DFL,OQ,"[R U: [R' D' R, U2]]"
-BDL-DRF,OV,"[U'D' R': [R' D R, U]]"
-BDL-DBR,OW,"[U R: [R U' R', D2]]"
-BDL-DLB,OX,"[z: [R U2 R', D2]]"
-BRD-UBL,PA,"[D U': [R D' R', U2]]"
-BRD-URB,PB,"[D: [U', R' D' R]]"
-BRD-ULF,PD,"[D': [R' D' R, U']]"
-BRD-LUB,PI,"[R U: [R' D' R, U]]"
-BRD-LFU,PJ,"[F: [D', R U R']]"
-BRD-LDF,PK,"[R' U' R: [R' D R, U2]]"
-BRD-LBD,PL,"[D': [D', R U R']]"
-BRD-FUL,PE,"[R U: [R' D' R, U2]]"
-BRD-FDR,PG,"[D R D: [R' U' R, D2]]"
-BRD-FLD,PH,"[D: [R U R', D2]]"
-BRD-RBU,PR,"[UD R: [U2, R D' R']]"
-BRD-RDB,PS,"[R2 D2: [R U R', D]]"
-BRD-RFD,PT,"[R U R', D']"
-BRD-BUR,PM,"[R U': [R' U R, D]]"
-BRD-BLU,PN,"[R2 U: [R D R', U2]]"
-BRD-BDL,PO,"[U': [R', U' L U]]"
-BRD-DFL,PQ,"[U' R': [R' D R, U']]"
-BRD-DRF,PV,"[U'D' R': [R' D R, U]]"
-BRD-DBR,PW,"[U R: [R U' R', D2]]"
-BRD-DLB,PX,"[U'D: [R U' R', D']]"
-DFL-UBL,QA,"[R F' R' U': [R D R', U2]]"
-DFL-URB,QB,"[x': [D2, R U R']]"
-DFL-ULF,QD,"[U' x': [R U R', D2]]"
-DFL-LUB,QI,"[R: [R D2 R', U]]"
-DFL-LFU,QJ,"[U' R' U: [R U' R', D]]"
-DFL-LDF,QK,"[R D R' D: [R U R', D2]]"
-DFL-LBD,QL,"[R D R' D: [R U R', D2]]"
-DFL-FUL,QE,"[R UD: [R' D' R, U2]]"
-DFL-FDR,QG,"U R U' F2 U R' U' R F2 R'"
-DFL-FLD,QH,"[R U' R': [R' D' R, U2]]"
-DFL-RBU,QR,"[U' R': [R' D R, U2]]"
-DFL-RDB,QS,"[U' R': [R' D R, U]]"
-DFL-RFD,QT,"[R D: [U, R' D' R]]"
-DFL-BUR,QM,"[UD R' U': [R U R', D']]"
-DFL-BLU,QN,"[U' R': [R' D R, U']]"
-DFL-BDL,QO,"[R U: [R' D' R, U2]]"
-DFL-BRD,QP,"[U' R': [R' D R, U']]"
-DFL-DRF,QV,"[U' R' F': [R U' R', D']]"
-DFL-DBR,QW,"[F' R U': [R' D' R, U2]]"
-DFL-DLB,QX,"[x U: [R' D R, U2]]"
-DRF-UBL,VA,"[D R D' R': [R' D R, U2]]"
-DRF-URB,VB,"[R' D R U' R D' R', U]"
-DRF-ULF,VD,"[R' D R U' R D' R', U']"
-DRF-LUB,VI,"[U2 x': [R U' R', D']]"
-DRF-LFU,VJ,"[R U' R': [R' D' R, U2]]"
-DRF-LDF,VK,"[z R' D R: [U', R' D2 R]]"
-DRF-LBD,VL,"[D2 R: [R D' R', U']]"
-DRF-FUL,VE,"[D' R UD: [R' D' R, U2]]"
-DRF-FDR,VG,"[R U' R': [U2, R' D R]]"
-DRF-FLD,VH,"[R U' R': [U2, R' D R]]"
-DRF-RBU,VR,"U R' F2 R D' R' D F2 D' R DU'"
-DRF-RDB,VS,"[D' R: [R' U R U', F2]]"
-DRF-RFD,VT,"[U R' U': [R U R', D']]"
-DRF-BUR,VM,"[U R' U': [R U R', D']]"
-DRF-BLU,VN,"[U'D' R': [R' D R, U']]"
-DRF-BDL,VO,"[U'D' R': [R' D R, U]]"
-DRF-BRD,VP,"[U'D' R': [R' D R, U]]"
-DRF-DFL,VQ,"[U' R' F': [R U' R', D']]"
-DRF-DBR,VW,"[F' R U': [R' D' R, U2]]"
-DRF-DLB,VX,"[D' R D: [U, R' D' R]]"
-DBR-UBL,WA,"[R D' R': [R' D R, U2]]"
-DBR-URB,WB,"[U R D' R': [U', R' D R]]"
-DBR-ULF,WD,"[R D' R': [R' D R, U']]"
-DBR-LUB,WI,"[D R: [R D' R', U]]"
-DBR-LFU,WJ,"[z: [D2, R U R']]"
-DBR-LDF,WK,"[U R: [D, R U' R']]"
-DBR-LBD,WL,"[R D' R': [R' D R, U]]"
-DBR-FUL,WE,"[D R: [R D' R', U2]]"
-DBR-FDR,WG,"[U R D': [U', R' D R]]"
-DBR-FLD,WH,"[D R: [R D' R', U']]"
-DBR-RBU,WR,"[F': [U2, R D R']]"
-DBR-RDB,WS,"[R: [U, R' D R U' R D' R']]"
-DBR-RFD,WT,"[D R U': [R' U R, D']]"
-DBR-BUR,WM,"[D R U': [R' U R, D']]"
-DBR-BLU,WN,"[R', [U' L' U, R2]]"
-DBR-BDL,WO,"[U R: [R U' R', D2]]"
-DBR-BRD,WP,"[U R: [R U' R', D2]]"
-DBR-DFL,WQ,"[F' R U': [R' D' R, U2]]"
-DBR-DRF,WV,"[F' R U': [R' D' R, U2]]"
-DBR-DLB,WX,"[R U' R' U: [R D' R', U2]]"
-DLB-UBL,XA,"[R' z R': [R' D R, U2]]"
-DLB-URB,XB,"[x: [R' U' R, D2]]"
-DLB-ULF,XD,"[R' D' R: [R U' R', D]]"
-DLB-LUB,XI,"[R: [R D' R', U]]"
-DLB-LFU,XJ,"[R2 D2: [R U' R', D]]"
-DLB-LDF,XK,"[F': [R U' R', D2]]"
-DLB-LBD,XL,"[z: [R U2 R', D]]"
-DLB-FUL,XE,"[R: [R D' R', U2]]"
-DLB-FDR,XG,"[z: [R U2 R', D]]"
-DLB-FLD,XH,"[z' U': [R U R', D']]"
-DLB-RBU,XR,"[U'D R': [R' D R, U2]]"
-DLB-RDB,XS,"[R2 D2: [R U' R', D]]"
-DLB-RFD,XT,"[R: [R D' R', U']]"
-DLB-BUR,XM,"[R U': [R' U R, D']]"
-DLB-BLU,XN,"[U'D R': [R' D R, U']]"
-DLB-BDL,XO,"[z: [R U2 R', D2]]"
-DLB-BRD,XP,"[U'D: [R U' R', D']]"
-DLB-DFL,XQ,"[x U: [R' D R, U2]]"
-DLB-DRF,XV,"[D' R D: [U, R' D' R]]"
-DLB-DBR,XW,"[R U' R' U: [R D' R', U2]]"
+ULF-UBL,CA,"[R' D' R U2: [R' D R, U]]"
+ULF-URB,CB,"[R F' R2': [D , R U R']]"
+LUB-URB,DB,"[R: [U, R D R']]"
+LUB-ULF,DC,"[U' R: [R D R', U2]]"
+LFU-UBL,EA,"[F: [U2, R' D' R]]"
+LFU-URB,EB,"[R': [R' D' R, U']]"
+LFU-LUB,ED,"[z: [U, R' D' R]]"
+LFU-LDF,EF,"[z: [U', R' D' R]]"
+LDF-UBL,FA,"[R' D R, U2]"
+LDF-URB,FB,"[R' D R, U]"
+LDF-ULF,FC,"[R' D R, U']"
+LDF-LUB,FD,"[U R': [U', R' D R]]"
+LDF-LFU,FE,"[R' U': [D, R U R']]"
+LBD-UBL,GA,"[U': [R D' R', U2]]"
+LBD-URB,GB,"[U', R D' R']"
+LBD-ULF,GC,"[U': [R D' R', U']]"
+LBD-LUB,GD,"[z U: [R' D' R, U]]"
+LBD-LFU,GE,"[z: [R' D' R, U2]]"
+LBD-LDF,GF,"[z': [R U' R', D']]"
+LBD-FDR,GI,"[Lw' U: [R U' R', D]]"
+FUL-UBL,HA,"[Lw': [U2, R' D2 R]]"
+FUL-URB,HB,"[R: [U2, R D R']]"
+FUL-LUB,HD,"[Lw' U: [R D' R', U2]]"
+FUL-LDF,HF,D R' F2 R D' R' D F2 D' R
+FUL-LBD,HG,"[Lw': [U2, R' D R]]"
+FDR-UBL,IA,"[D': [R' D R, U2]]"
+FDR-URB,IB,"[D': [R' D R, U]]"
+FDR-ULF,IC,"[D': [R' D R, U']]"
+FDR-LUB,ID,"[R U R': [R' D' R, U']]"
+FDR-LFU,IE,"[z: [D, R U R']]"
+FDR-LDF,IF,"[U: [D, R U' R']]"
+FDR-LBD,IG,"[U R U': [R D' R', U']]"
+FDR-FUL,IH,D' R' D F2 D' R D R' F2 R
+FLD-UBL,JA,"[D' U': [R D' R', U2]]"
+FLD-URB,JB,"[D: [R' D' R, U]]"
+FLD-ULF,JC,"[D': [R' D' R, U']]"
+FLD-LUB,JD,"[R U: [R' D R, U]]"
+FLD-LFU,JE,"[D R' U': [D', R U R']]"
+FLD-LBD,JG,"[D2: [R U R', D']]"
+FLD-FUL,JH,"[R U: [R' D R, U2]]"
+FLD-FDR,JI,"[z: [R U' R', D]]"
+RBU-UBL,KA,"[R D R': [R' D2 R, U2]]"
+RBU-ULF,KC,"[U' R': [U2, R' D' R]]"
+RBU-LUB,KD,"[R: [R2' D R2 D' R2', U]]"
+RBU-LFU,KE,"[F' U: [R' D R, U2]]"
+RBU-LDF,KF,"[U R U: [R' D R, U2]]"
+RBU-LBD,KG,"[U R: [R D' R', U2]]"
+RBU-FUL,KH,"[R': [R2 D' R2' D R2, U']]"
+RBU-FDR,KI,"[U' R' U: [R D R', U2]]"
+RBU-FLD,KJ,"[F' U: [R' D' R, U2]]"
+RBU-RFD,KM,R2UD
+RDB-UBL,LA,"[U': [R D R', U2]]"
+RDB-URB,LB,"[U', R D R']"
+RDB-ULF,LC,"[U': [R D R', U']]"
+RDB-LUB,LD,"[R D: [R D R', U]]"
+RDB-LFU,LE,"[R' U’: [R' D' R, U2]]"
+RDB-LDF,LF,"[UD: [R U' R', D2]]"
+RDB-LBD,LG,"[R D': [R' U' R, D2]]"
+RDB-FUL,LH,"[Lw' U': [R D R', U2]]"
+RDB-FDR,LI,"[U: [R U' R', D']]"
+RDB-FLD,LJ,"[R D: [D, R' U' R]]"
+RDB-RBU,LK,"[U R U': [R' D' R, U2]]"
+RDB-DRF,LS,"[DU R: [R U' R', D2]]"
+RFD-UBL,MA,"[R' D' R, U2]"
+RFD-URB,MB,"[R' D' R, U]"
+RFD-ULF,MC,"[R' D' R, U']"
+RFD-LUB,MD,"[D' R U: [R' D R, U]]"
+RFD-LFU,ME,"[R' U': [D', R U R']]"
+RFD-LDF,MF,"[U R' D: [R U' R', D2]]"
+RFD-LBD,MG,"[D2, R U R']"
+RFD-FUL,MH,"[Lw': [R' D' R, U2]]"
+RFD-FLD,MJ,"[D, R U R']"
+RFD-RBU,MK,"[U' R' U'D: [R D' R', U2]]"
+RFD-RDB,ML,"[R D’: [R’ D R, U]]"
+BUR-UBL,NA,"[R' D': [U2, R' D R]]"
+BUR-ULF,NC,"[U' R: [R D R', U]]"
+BUR-LUB,ND,"[x: [R', U' L U]]"
+BUR-LFU,NE,"[z: [D', R U R']]"
+BUR-LDF,NF,"[R' U: [R U' R', D]]"
+BUR-LBD,NG,"[U' L U, R]"
+BUR-FUL,NH,"[R D'U: [R' D' R, U2]]"
+BUR-FDR,NI,"[D' R' U: [R U' R', D]]"
+BUR-FLD,NJ,"[z: [D', R U' R']]"
+BUR-RDB,NL,"[U' R U: [R' U' R, D]]"
+BUR-RFD,NM,"[R D: [R D' R', U’]]"
+BLU-URB,OB,"[R': [R' D' R, U2]]"
+BLU-ULF,OC,"[U' R': [U', R' D' R]]"
+BLU-LFU,OE,"[x': [R U' R', D]]"
+BLU-LDF,OF,"[Lw U': [U', R D' R']]"
+BLU-LBD,OG,"[U2 R: [R D' R', U]]"
+BLU-FUL,OH,"[R U R' D': [U2, R' D R]]"
+BLU-FDR,OI,"[Lw D': [U', R' D R]]"
+BLU-FLD,OJ,"[D x': [R U' R', D']]"
+BLU-RBU,OK,"[U R: [U2, R D R']]"
+BLU-RDB,OL,[R' U: [R' D' R. U]]
+BLU-RFD,OM,"[x': [R U' R', D']]"
+BLU-BUR,ON,"[R, U' L' U]"
+BDL-UBL,PA,"[R' D2 R, U2]"
+BDL-URB,PB,"[R' D2 R, U]"
+BDL-ULF,PC,"[R' D2 R, U']"
+BDL-LUB,PD,"[U R': [U', R' D2 R]"
+BDL-LFU,PE,"[x': [R U2 R', D]]"
+BDL-LDF,PF,"[UD: [R U' R', D]]"
+BDL-FUL,PH,D R' D F2 D' R D R' F2 R D2
+BDL-FDR,PI,"[U: [R U' R', D2]]"
+BDL-FLD,PJ,"[D' R D': [R' U' R, D2]]"
+BDL-RBU,PK,"[U' R' U’: [R D' R', U2]]"
+BDL-RDB,PL,"[UD': [R U' R', D']]"
+BDL-RFD,PM,"[x': [R U2 R', D']]"
+BDL-BUR,PN,"[R' U: [D2, R U' R']]"
+BDL-BLU,PO,"[U' R' U': [R D' R', U']"
+BRD-UBL,QA,"[D U': [R D' R', U2]]"
+BRD-URB,QB,"[D: [U', R' D' R]]"
+BRD-ULF,QC,"[D': [R' D' R, U']]"
+BRD-LUB,QD,"[R U: [R' D' R, U]]"
+BRD-LFU,QE,"[F: [D', R U R']]"
+BRD-LDF,QF,"[R' U' R: [R' D R, U2]]"
+BRD-LBD,QG,"[D': [D', R U R']]"
+BRD-FUL,QH,"[R U: [R' D' R, U2]]"
+BRD-FDR,QI,"[D R D: [R' U' R, D2]]"
+BRD-FLD,QJ,"[D: [R U R', D2]]"
+BRD-RBU,QK,"[UD R: [U2, R D' R']]"
+BRD-RFD,QM,"[R U R', D']"
+BRD-BUR,QN,"[R U': [R' U R, D]]"
+BRD-BLU,QO,"[R2 U: [R D R', U2]]"
+BRD-BDL,QP,"[U': [R', U' L U]]"
+DFL-UBL,RA,"[R F' R' U': [R D R', U2]]"
+DFL-URB,RB,"[x': [D2, R U R']]"
+DFL-ULF,RC,"[U' x': [R U R', D2]]"
+DFL-LUB,RD,"[R: [R D2 R', U]]"
+DFL-LFU,RE,"[U' R' U: [R U' R', D]]"
+DFL-LBD,RG,"[R D R' D: [R U R', D2]]"
+DFL-FUL,RH,"[R UD: [R' D' R, U2]]"
+DFL-FDR,RI,U R U' F2 U R' U' R F2 R'
+DFL-RBU,RK,"[U' R': [R' D R, U2]]"
+DFL-RDB,RL,"[U' R': [R' D R, U]]"
+DFL-RFD,RM,"[R D: [U, R' D' R]]"
+DFL-BUR,RN,"[UD R' U': [R U R', D']]"
+DFL-BLU,RO,"[U' R': [R' D R, U']]"
+DFL-BDL,RP,"[x': [D2, R U2 R']]"
+DFL-BRD,RQ,"[D' R: [R D' R', U']]"
+DRF-UBL,SA,"[D R D' R': [R' D R, U2]]"
+DRF-URB,SB,"[R' D R U' R D' R', U]"
+DRF-ULF,SC,"[R' D R U' R D' R', U']"
+DRF-LUB,SD,"[U2 x': [R U' R', D']]"
+DRF-LFU,SE,"[R U' R': [R' D' R, U2]]"
+DRF-LDF,SF,"[z R' D R: [U', R' D2 R]]"
+DRF-LBD,SG,"[D2 R: [R D' R', U']]"
+DRF-FUL,SH,"[D' R UD: [R' D' R, U2]]"
+DRF-FLD,SJ,"[R U' R': [U2, R' D R]]"
+DRF-RBU,SK,U R' F2 R D' R' D F2 D' R DU'
+DRF-RDB,SL,"[D' R: [R' U R U', F2]]"
+DRF-BUR,SN,"[U R' U': [R U R’, D']]"
+DRF-BLU,SO,"[U'D' R': [R' D R, U']]"
+DRF-BDL,SP,"[U'D' R’: [R’ D R, U]]"
+DRF-BRD,SQ,"[D' R D: [U, R' D' R]]"
+DRF-DFL,SR,"[U' R' F': [R U' R', D']]"
+DBR-UBL,TA,"[R D' R': [R' D R, U2]]"
+DBR-URB,TB,"[U R D' R': [U', R' D R]]"
+DBR-ULF,TC,"[R D' R': [R' D R, U']]"
+DBR-LUB,TD,"[D R: [R D' R', U]]"
+DBR-LFU,TE,"[z: [D2, R U R']"
+DBR-LDF,TF,"[U R: [D, R U' R']]"
+DBR-LBD,TG,"[R D' R’: [R’ D R, U]]"
+DBR-FUL,TH,"[D R: [R D' R', U2]]"
+DBR-FDR,TI,"[U R D': [U', R' D R]]"
+DBR-FLD,TJ,"[D R: [R D' R', U’]]"
+DBR-RBU,TK,"[F': [U2, R D R']]"
+DBR-RFD,TM,"[R: [U, R' D R U' R D' R']]"
+DBR-BUR,TN,"[D R U': [R' U R, D']]"
+DBR-BLU,TO,"[R', [U' L' U, R2]]"
+DBR-BDL,TP,"[U R: [R U' R', D2]]"
+DBR-DFL,TR,R2UD
+DBR-DRF,TS,"[F' R U': [R' D' R, U2]]"
+DLB-UBL,UA,"[R' z R': [R' D R, U2]]"
+DLB-URB,UB,"[x: [R' U' R, D2]]"
+DLB-ULF,UC,"[R' D' R: [R U' R', D]]"
+DLB-LUB,UD,"[R: [R D' R', U]]"
+DLB-LFU,UE,"[R2 D2: [R U' R', D]]"
+DLB-LDF,UF,"[F' [R U' R', D2]]"
+DLB-FUL,UH,"[R: [R D' R', U2]]"
+DLB-FDR,UI,"[z: [R U2 R', D]]"
+DLB-FLD,UJ,"[z' U': [R U R', D']]"
+DLB-RBU,UK,"[U'D R': [R' D R, U2]]"
+DLB-RDB,UL,"[R2 D2: [R U R', D]]"
+DLB-RFD,UM,"[R: [R D' R', U']]"
+DLB-BUR,UN,"[R U': [R' U R, D']] "
+DLB-BLU,UO,"[U'D R’: [R’ D R, U']]"
+DLB-BRD,UQ,"[R U'D: [R' U R, D2]]"
+DLB-DFL,UR,"[x U: [R' D R, U2]]"
+DLB-DRF,US,"[R U' R' U: [R D' R', U2]]"
+DLB-DBR,UT,"[z: [R U2 R', D2]]"
+UBL-URB,AB,R' D2 R U' Lw
+UBL-LFU,AE,R' D R U2 F'
+UBL-LDF,AF,"[U2, R' D' R]"
+UBL-LBD,AG,U2 R D R' U
+UBL-FUL,AH,R' D2 R U2 Lw
+UBL-FDR,AI,U2 R' D' R D
+UBL-FLD,AJ,U2 R D R' U D
+UBL-RBU,AK,U2 R' D2 R R D' R'
+UBL-RDB,AL,U2 R D' R' U
+UBL-RFD,AM,"[U2, R' D R]"
+UBL-BUR,AN,R' D' R U2 D R
+UBL-BDL,AP,"[U2, R' D2 R]"
+UBL-BRD,AQ,U2 R D R' U D'
+UBL-DFL,AR,U2 R D' R' U R F R'
+UBL-DRF,AS,U2 R' D' R R D R' D'
+UBL-DBR,AT,U2 R' D' R R D R'
+URB-ULF,BC,R U' R' D' R2 F R'
+URB-LUB,BD,R D' R' U' R'
+URB-LFU,BE,U R' D R R
+URB-LDF,BF,"[U', R' D' R]"
+URB-LBD,BG,"[R D R', U]"
+URB-FUL,BH,R D' R' U2 R'
+URB-FDR,BI,U' R' D' R D
+URB-FLD,BJ,U' R' D R D'
+URB-RDB,BL,"[R D' R', U]"
+URB-RFD,BM,"[U', R' D R]"
+URB-BLU,BO,U2 R' D R R
+URB-BDL,BP,"[U', R' D2 R]"
+URB-BRD,BQ,R' D R U D'
+URB-DFL,BR,R U' R' D2 x
+URB-DRF,BS,"[U', R D R' U R' D' R]"
+URB-DBR,BT,R' D' R U R D R' U'
+ULF-LUB,CD,U2 R D' R' R' U
+ULF-LDF,CF,"[U, R' D' R]"
+ULF-LBD,CG,U R D R' U
+ULF-FDR,CI,U R' D' R D
+ULF-FLD,CJ,U R' D R D
+ULF-RBU,CK,R' D R U2 R U
+ULF-RDB,CL,U R D' R' U
+ULF-RFD,CM,"[U, R' D R]"
+ULF-BUR,CN,U' R D' R' R' U
+ULF-BLU,CO,R' D R U R U
+ULF-BDL,CP,"[U, R' D2 R]"
+ULF-BRD,CQ,U R' D R D
+ULF-DFL,CR,D2 R U' R' x U
+ULF-DRF,CS,"[U, R D R' U R' D' R]"
+ULF-DBR,CT,U R' D' R R D R'
+LUB-LFU,DE,R' D R U' z'
+LUB-LDF,DF,R' D' R U R U'
+LUB-LBD,DG,U' R' D R U' z'
+LUB-FUL,DH,U2 R D R' U' Lw
+LUB-FDR,DI,U R' D R R U' R'
+LUB-FLD,DJ,U' R' D' R U' R'
+LUB-RBU,DK,U' R2 D R2 D' R2 R'
+LUB-RDB,DL,U' R D' R' D' R'
+LUB-RFD,DM,U' R' D' R U' R' D
+LUB-BUR,DN,U' L' U R x'
+LUB-BDL,DP,R' D2 R U R U'
+LUB-BRD,DQ,U' R' D R U' R'
+LUB-DFL,DR,U' R D2 R' R'
+LUB-DRF,DS,D R U R' x U2
+LUB-DBR,DT,U' R D R' R' D'
+LFU-LBD,EG,U2 R' D R z'
+LFU-FDR,EI,R U' R' D' z'
+LFU-FLD,EJ,R U' R' D U R D'
+LFU-RBU,EK,U2 R' D' R U' F
+LFU-RDB,EL,U2 R' D R U’' R
+LFU-RFD,EM,R U' R' D U R
+LFU-BUR,EN,R U' R' D z'
+LFU-BLU,EO,D' R U R' x
+LFU-BDL,EP,D' R U2 R' x
+LFU-BRD,EQ,R U' R' D F'
+LFU-DFL,ER,D' R U R' U' R U
+LFU-DRF,ES,U2 R' D R R U R'
+LFU-DBR,ET,R U' R' D2 z'
+LDF-LBD,FG,D R U R' z
+LDF-FUL,FH,R' D F2 D' R D R' F2 R D'
+LDF-FDR,FI,R U R' D' U'
+LDF-RBU,FK,U2 R' D' R U' R' U'
+LDF-RDB,FL,D2 R U R' UD'
+LDF-RFD,FM,D2 R U R' D' R U'
+LDF-BUR,FN,D' R U R' U' R
+LDF-BLU,FO,R D R' U U Lw'
+LDF-BDL,FP,D' R U R' UD'
+LDF-BRD,FQ,U2 R' D' R R' U R
+LDF-DRF,FS,R' D2 R U R' D' R z'
+LDF-DBR,FT,R U R' D' R' U'
+LBD-FUL,GH,R' D' R U2 Lw
+LBD-FLD,GJ,D R U' R' D2
+LBD-RBU,GK,U2 R D R' R' U'
+LBD-RDB,GL,D2 R' U R D R'
+LBD-RFD,GM,"[R U' R', D2]"
+LBD-BUR,GN,"[R', U' L' U]"
+LBD-BLU,GO,U' R D R' R' U2
+LBD-BRD,GQ,R U' R' D D
+LBD-DFL,GR,D2 R U' R' D' R D' R'
+LBD-DRF,GS,U R D R' R' D2
+LBD-DBR,GT,U' R' D' R’' R’' D R'
+FUL-FDR,HI,R' F2 R D' R' D F2 D' R D
+FUL-FLD,HJ,U2 R' D' R U' R'
+FUL-RBU,HK,U R2 D' R2 D R2 R
+FUL-RDB,HL,U2 R D' R' U Lw
+FUL-RFD,HM,U2 R' D R Lw
+FUL-BUR,HN,U2 R' D R D'U' R'
+FUL-BLU,HO,R' D' R U2 D R U' R'
+FUL-BDL,HP,D2 R' F2 R D' R' D F2 D' R D'
+FUL-BRD,HQ,U2 R' D R U' R'
+FUL-DFL,HR,U2 R' D R UD' R'
+FUL-DRF,HS,U2 R' D R UD' R' D
+FUL-DBR,HT,U2 R D R' R' D'
+FDR-FLD,IJ,D' R U R' z'
+FDR-RBU,IK,U2 R D' R' U' R U
+FDR-RDB,IL,D R U R' U'
+FDR-BUR,IN,D' R U R' U' R D
+FDR-BLU,IO,R' D' R U D Lw'
+FDR-BDL,IP,D2 R U R' U'
+FDR-BRD,IQ,D2 R' U R D' R' D'
+FDR-DFL,IR,R F2 R' U R U' F2 U R' U'
+FDR-DBR,IT,R' D' R U D R' U'
+FLD-RBU,JK,U2 R' D R U' F
+FLD-RDB,JL,R' U R D' D' R'
+FLD-RFD,JM,"[R U' R', D']"
+FLD-BUR,JN,R U R' D z'
+FLD-BLU,JO,D R U R' x D'
+FLD-BDL,JP,D2 R' U R D R' D
+FLD-BRD,JQ,D2 R U' R' D'
+FLD-DRF,JS,R' D' R U2 R U R'
+FLD-DBR,JT,U’' R D R' R' D'
+RBU-RDB,KL,U2 R' D R U R' U'
+RBU-BLU,KO,R D' R' U2 R' U'
+RBU-BDL,KP,U2 R D R' U’' R U
+RBU-BRD,KQ,R D R' U2 R' UD'
+RBU-DFL,KR,U2 R' D' R R U
+RBU-DRF,KS,DU R' D F2 D' R D R' F2 R U'
+RBU-DBR,KT,R D' R' U2 F
+RDB-RFD,LM,U' R' D' R’' D’' R'
+RDB-BUR,LN,D' R' U R U' R' U
+RDB-BLU,LO,U' R.' D R U' R
+RDB-BDL,LP,D R U R' UD
+RDB-DFL,LR,U' R' D' R R U
+RFD-BUR,MN,U’' R D R' D' R'
+RFD-BLU,MO,D R U R' x
+RFD-BDL,MP,D R U2 R' x
+RFD-BRD,MQ,"[D, R U' R']"
+RFD-DFL,MR,R' D R U' D' R'
+RFD-DBR,MT,R D R' U R' D' R U' R'
+BUR-BLU,NO,"[U' L U, R']"
+BUR-BDL,NP,R U R' D2 U' R
+BUR-BRD,NQ,D' R' U' R U R'
+BUR-DFL,NR,D R U' R' U R UD'
+BUR-DRF,NS,D R’' U' R' U R U'
+BUR-DBR,NT,D R' U' R U R' D'
+BLU-BDL,OP,U R D R' U R U
+BLU-BRD,OQ,U2 R D' R' U' R2
+BLU-DFL,OR,U R' D' R R U
+BLU-DRF,OS,U R' D' R R U'D
+BLU-DBR,OT,"[R2 U' L U, R]"
+BDL-BRD,PQ,U' L' U R U
+BDL-DFL,PR,R U2 R' D2 x
+BDL-DRF,PS,U' R' D' R’' R’' U'D
+BDL-DBR,PT,D2 R U R' R' U'
+BRD-DFL,QR,U R D R' R' D
+BRD-DRF,QS,R' D R U' D' R' D
+DFL-DRF,RS,D R U R' F R U
+DFL-DBR,RT,R2UD'
+DRF-DBR,ST,U2 R' D R U R' F
