@@ -13,6 +13,36 @@ export const analyze3StyleAlgorithm = (algorithm: string): {
   // Clean the algorithm string
   const cleanAlg = algorithm.trim();
   
+  // Check if it's a special case algorithm (direct sequence without commutator brackets)
+  const specialCases = [
+    'D\' R\' D F2 D\' R D R\' F2 R', // EG, GE
+    'D R\' F2 R D\' R\' D F2 D\' R',  // EK, KE 
+    'D R\' D F2 D\' R D R\' F2 R D2', // EO
+    'U R U\' F2 U R\' U\' R F2 R\'',  // GQ, QG
+    'R\' D R2 D\' R2\' U\' R2 D R2 D\' R2 U R\'', // RT
+    'R2 U\' R2 D R2 U R2 U\' R2 D\' R2 U', // QW
+    'U R\' F2 R D\' R\' D F2 D\' R DU\'', // VR
+    'R2UD' // QW (simplified notation)
+  ];
+
+  // Check if this is a special case
+  if (!cleanAlg.includes('[') && !cleanAlg.includes(']')) {
+    // Direct algorithm without commutator notation
+    for (const specialCase of specialCases) {
+      // Compare normalized (removing extra spaces)
+      if (cleanAlg.replace(/\s+/g, ' ') === specialCase.replace(/\s+/g, ' ') ||
+          // Also check inverse algorithms (this is a simplified check)
+          cleanAlg.includes(specialCase.substring(0, 10))) {
+        return {
+          setupCategory: 'special-case',
+          setupMoves: '',
+          core: cleanAlg,
+          setupCount: 0
+        };
+      }
+    }
+  }
+  
   // Check if it's in 3-style commutator format [setup: [core]]
   const commutatorMatch = cleanAlg.match(/^\[([^\]]*?):\s*\[([^\]]*?)\]\]$/);
   

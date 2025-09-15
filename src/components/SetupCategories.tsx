@@ -35,6 +35,10 @@ export const SetupCategories = ({ algorithms, onAlgorithmSelect }: SetupCategori
   };
 
   const getCategoryColor = (categoryName: string) => {
+    if (categoryName === 'special-case') {
+      return 'bg-rose-50 border-rose-200 text-rose-800'; // Special color for special cases
+    }
+    
     const setupNum = parseInt(categoryName.replace('setup-', '')) || 0;
     const colors = [
       'bg-green-50 border-green-200 text-green-800', // setup-0
@@ -65,15 +69,21 @@ export const SetupCategories = ({ algorithms, onAlgorithmSelect }: SetupCategori
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {statistics.map(({ category, count }) => {
               const setupNum = parseInt(category.replace('setup-', '')) || 0;
+              let displayText = '';
+              
+              if (category === 'special-case') {
+                displayText = 'Special Case';
+              } else {
+                displayText = setupNum === 0 ? 'No Setup' : `${setupNum} Move${setupNum > 1 ? 's' : ''}`;
+              }
+              
               return (
                 <div
                   key={category}
                   className={`p-3 rounded-lg border text-center ${getCategoryColor(category)}`}
                 >
                   <div className="text-2xl font-bold">{count}</div>
-                  <div className="text-sm">
-                    {setupNum === 0 ? 'No Setup' : `${setupNum} Move${setupNum > 1 ? 's' : ''}`}
-                  </div>
+                  <div className="text-sm">{displayText}</div>
                   <div className="text-xs opacity-75">{category}</div>
                 </div>
               );
