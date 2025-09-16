@@ -5,13 +5,15 @@ import { Records } from './components/Records';
 import { NotationMapper } from './components/NotationMapper';
 import { SetupCategories } from './components/SetupCategories';
 import { BatchTraining } from './components/BatchTraining';
+import { Analytics } from './components/Analytics';
+import { WeeklyReport } from './components/WeeklyReport';
 import { Button } from './components/ui/button';
 import type { Algorithm } from './types';
 import { parseCSVAlgorithms } from './lib/csvParser';
 import { useLocalStorage } from './hooks/useLocalStorage';
-import { Clock, BookOpen, BarChart3, Map, RotateCcw, Layers, Target } from 'lucide-react';
+import { Clock, BookOpen, BarChart3, Map, RotateCcw, Layers, Target, TrendingUp, Calendar } from 'lucide-react';
 
-type Tab = 'timer' | 'flashcards' | 'records' | 'notation' | 'setup' | 'batch';
+type Tab = 'timer' | 'flashcards' | 'records' | 'notation' | 'setup' | 'batch' | 'analytics' | 'weekly';
 
 function App() {
   const [activeTab, setActiveTab] = useState<Tab>('flashcards');
@@ -55,6 +57,8 @@ function App() {
     { id: 'batch' as Tab, label: 'Batch Training', icon: Target },
     { id: 'timer' as Tab, label: 'Timer', icon: Clock },
     { id: 'records' as Tab, label: 'Records', icon: BarChart3 },
+    { id: 'analytics' as Tab, label: 'Analytics', icon: TrendingUp },
+    { id: 'weekly' as Tab, label: 'Weekly Report', icon: Calendar },
     { id: 'setup' as Tab, label: 'Setup Analysis', icon: Layers },
     { id: 'notation' as Tab, label: 'Notation', icon: Map },
   ];
@@ -155,6 +159,14 @@ function App() {
             
             {activeTab === 'records' && (
               <Records algorithms={algorithms} />
+            )}
+            
+            {activeTab === 'analytics' && (
+              <Analytics algorithms={algorithms} />
+            )}
+            
+            {activeTab === 'weekly' && (
+              <WeeklyReport algorithms={algorithms} />
             )}
             
             {activeTab === 'setup' && (

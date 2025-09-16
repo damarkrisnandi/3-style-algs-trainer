@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import type { Algorithm } from '@/types';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
-import { ChevronLeft, ChevronRight, RotateCcw, Eye, EyeOff } from 'lucide-react';
+import { ChevronLeft, ChevronRight, RotateCcw, Eye, EyeOff, SkipForward, CheckCircle } from 'lucide-react';
 
 interface FlashcardsProps {
   algorithms: Algorithm[];
@@ -14,14 +14,24 @@ export const Flashcards = ({ algorithms, onAlgorithmSelect }: FlashcardsProps) =
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const [filterMemorized, setFilterMemorized] = useState(false);
-  const { getAlgorithmStats } = useLocalStorage();
+  const [filterSkipped, setFilterSkipped] = useState(true);
+  const { getAlgorithmStats, toggleSkipAlgorithm, toggleMemorizeAlgorithm } = useLocalStorage();
 
-  const filteredAlgorithms = filterMemorized 
-    ? algorithms.filter(alg => {
-        const stats = getAlgorithmStats(`${alg.corners}-${alg.notation}`);
-        return stats && !stats.isMemorized;
-      })
-    : algorithms;
+  const filteredAlgorithms = algorithms.filter(alg => {
+    const stats = getAlgorithmStats(`${alg.corners}-${alg.notation}`);
+    
+    // Filter out skipped algorithms if filterSkipped is true
+    if (filterSkipped && stats?.isSkipped) {
+      return false;
+    }
+    
+    // Filter out memorized algorithms if filterMemorized is true
+    if (filterMemorized && stats?.isMemorized) {
+      return false;
+    }
+    
+    return true;
+  });
 
   const currentAlgorithm = filteredAlgorithms[currentIndex];
 
@@ -47,6 +57,19 @@ export const Flashcards = ({ algorithms, onAlgorithmSelect }: FlashcardsProps) =
   const selectForTimer = () => {
     if (currentAlgorithm && onAlgorithmSelect) {
       onAlgorithmSelect(currentAlgorithm);
+    }
+  };
+
+  const handleSkipAlgorithm = () => {
+    if (currentAlgorithm) {
+      toggleSkipAlgorithm(`${currentAlgorithm.corners}-${currentAlgorithm.notation}`);
+      nextCard(); // Move to next card after skipping
+    }
+  };
+
+  const handleToggleMemorized = () => {
+    if (currentAlgorithm) {
+      toggleMemorizeAlgorithm(`${currentAlgorithm.corners}-${currentAlgorithm.notation}`);
     }
   };
 
@@ -98,6 +121,15 @@ export const Flashcards = ({ algorithms, onAlgorithmSelect }: FlashcardsProps) =
               Show All Algorithms
             </Button>
           )}
+          {!filterSkipped && (
+            <Button 
+              variant="outline" 
+              onClick={() => setFilterSkipped(true)}
+              className="mt-4 ml-2"
+            >
+              Hide Skipped
+            </Button>
+          )}
         </CardContent>
       </Card>
     );
@@ -124,6 +156,15 @@ export const Flashcards = ({ algorithms, onAlgorithmSelect }: FlashcardsProps) =
               {filterMemorized ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}
               {filterMemorized ? 'Show All' : 'Hide Memorized'}
             </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setFilterSkipped(!filterSkipped)}
+              className="text-xs"
+            >
+              {filterSkipped ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+              {filterSkipped ? 'Show Skipped' : 'Hide Skipped'}
+            </Button>
           </div>
         </CardTitle>
         <div className="text-center text-sm text-muted-foreground">
@@ -147,6 +188,29 @@ export const Flashcards = ({ algorithms, onAlgorithmSelect }: FlashcardsProps) =
                 <div className="text-xl font-mono bg-muted p-4 rounded-lg">
                   {currentAlgorithm.alg}
                 </div>
+                
+                {/* Algorithm Status and Controls */}
+                <div className="flex gap-2 justify-center">
+                  <Button
+                    variant={algorithmStats?.isMemorized ? "default" : "outline"}
+                    size="sm"
+                    onClick={handleToggleMemorized}
+                    className="text-xs"
+                  >
+                    <CheckCircle className="w-4 h-4 mr-1" />
+                    {algorithmStats?.isMemorized ? 'Memorized' : 'Mark Memorized'}
+                  </Button>
+                  <Button
+                    variant={algorithmStats?.isSkipped ? "destructive" : "outline"}
+                    size="sm"
+                    onClick={handleSkipAlgorithm}
+                    className="text-xs"
+                  >
+                    <SkipForward className="w-4 h-4 mr-1" />
+                    {algorithmStats?.isSkipped ? 'Skipped' : 'Skip'}
+                  </Button>
+                </div>
+                
                 {algorithmStats && (
                   <div className="text-sm space-y-1 text-muted-foreground">
                     <div>Best: {(algorithmStats.bestTime / 1000).toFixed(3)}s</div>
@@ -155,6 +219,9 @@ export const Flashcards = ({ algorithms, onAlgorithmSelect }: FlashcardsProps) =
                     <div className={algorithmStats.isMemorized ? 'text-green-600' : 'text-yellow-600'}>
                       {algorithmStats.isMemorized ? '✓ Memorized' : '◯ Learning'}
                     </div>
+                    {algorithmStats.isSkipped && (
+                      <div className="text-red-600">⊘ Skipped</div>
+                    )}
                   </div>
                 )}
               </div>
